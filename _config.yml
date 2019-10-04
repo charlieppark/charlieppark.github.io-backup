@@ -21,7 +21,7 @@ description: 끊임없이 성장하라
 # List of links in the navigation bar
 navbar-links:
   Project:
-    - KAU 2019 G.W.: "https://github.com/KimYC1223/Hyperledger_PCtoRASP"
+    - KAU 2019 Graduation Piece: "https://github.com/KimYC1223/Hyperledger_PCtoRASP"
     - KAU 2019 HW Design: "https://github.com/KimYC1223/KAU_HW_2018"
     - KAU 2018 Embedded Design: "https://github.com/KimYC1223/KAU_EMBEDED_19"
   About Me　　: "aboutme"
@@ -69,7 +69,7 @@ author:
 social-network-links:
   rss: true
   email: "kau_esc@naver.com"
-  facebook: kimyc1223
+  facebook: profile.php?id=100000498178589
   github: KimYC1223
   twitter: kimyc1223
 #  reddit: yourname
