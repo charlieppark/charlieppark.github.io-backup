@@ -213,6 +213,7 @@ img {
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;
+  width : 350px;
 }
 .navbar-custom .nav .navlinks-parent:after {
   content: " \25BC";
@@ -241,7 +242,7 @@ img {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom .nav .navlinks-container {
-    text-align: center;
+    text-align: left;
   }
   .navbar-custom .nav .navlinks-container:hover {
     background: rgba(0, 0, 0, 0.1);
