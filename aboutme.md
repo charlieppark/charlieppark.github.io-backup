@@ -11,7 +11,7 @@ bigimg: /img/nobgimage.png
 <table width="100%">
   <tr width="100%">
     <td width="40%">
-      <img src="MyPicture.jpeg" width="100%">
+      <img src="/img/MyPicture.jpeg" width="100%">
     </td>
     <td width="60%">
       테스트
