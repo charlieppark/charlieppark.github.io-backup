@@ -2,18 +2,16 @@
 layout: page
 title: About me
 subtitle: 김영찬
-image: /img/post/MR/title004.png
+image: /img/MyPicture2.png
 bigimg: /img/nobgimage.png
 ---
 
 # INFO
 
-<table width="100%" style="
-  border : none;
-">
+<table width="100%">
   <tr width="100%">
     <td width="40%" height ="400px" style = "
-    background-image:url(/img/MyPicture.jpeg);
+    background-image:url(/img/MyPicture.png);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;">
@@ -41,3 +39,5 @@ bigimg: /img/nobgimage.png
 
 
 # SKILLS
+
+작성중
