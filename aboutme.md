@@ -19,7 +19,7 @@ bigimg: /img/nobgimage.png
     background-repeat: no-repeat;">
     </td>
     <td width="60%" height="400px">
-      <font size="7">김영찬</font> <font color="#4d4d4d">Kim YoungChan</font><br>
+      <font size="5">김영찬</font> <font color="#4d4d4d">Kim YoungChan</font><br>
       <table>
         <tr><td>Nation</td><td>🇰🇷 South Korea</td></tr>
         <tr><td>email</td>
