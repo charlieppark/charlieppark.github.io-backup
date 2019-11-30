@@ -2,7 +2,7 @@
 layout: page
 title: About me
 subtitle: 김영찬
-image: /img/MyPicture2.png
+image: /img/MyPicture2.jpeg
 bigimg: /img/nobgimage.png
 ---
 
@@ -37,7 +37,8 @@ bigimg: /img/nobgimage.png
   </tr>
 <table>
 
+<br><br>
 
-# SKILLS
+<h1>SKILLS</h1>
 
 작성중
