@@ -21,13 +21,19 @@ bigimg: /img/nobgimage.png
     <td width="60%" height="400px">
       <font size="5">김영찬</font> <font color="#4d4d4d">Kim YoungChan</font><br>
       <table>
+        <tr><td>JOB</td><td>Embedded SW Assistant Researcher</td></tr>
         <tr><td>Nation</td><td>🇰🇷 South Korea</td></tr>
-        <tr><td>email</td>
+        <tr><td>Email</td>
             <td>
-              - kau_esc@naver.com (personal)
-              - kimyc1223@keti.re.kr (official)
+              <ul>
+                <li>kau_esc@naver.com (personal) </li>
+                <li>kimyc1223@keti.re.kr (official) </li>
+              </ul>
             </td>
         </tr>
+        <tr><td>Phone</td><td>+8210-9357-8504</td></tr>
+        <tr><td>Office</td><td>#22, Daewangpangyo-ro 712 beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do, 13488, Korea</td></tr>
+        <tr><td>GitHub</td><td>https://github.com/KimYC1223</td></tr>
       </table>
     </td>
   </tr>
