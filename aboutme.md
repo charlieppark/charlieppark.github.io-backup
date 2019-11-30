@@ -38,3 +38,6 @@ bigimg: /img/nobgimage.png
     </td>
   </tr>
 <table>
+
+
+# SKILLS
