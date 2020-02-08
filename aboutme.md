@@ -41,8 +41,6 @@ bigimg: /img/nobgimage.png
 
 <h1>SKILLS</h1>
 
-작성중<br>
+<table>
 
-# test
-
-## test2
+</table>
