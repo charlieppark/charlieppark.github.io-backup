@@ -16,6 +16,7 @@
   position: fixed;
   right:0px;
   top:0px;
+  z-index: 1;
 }
 
 .bodyDiv{
@@ -100,7 +101,7 @@ a:hover {text-decoration: none; color: rgb(163, 163, 163);}
 .bodyDiv hr{
   line-height: 100px;
   margin-top:60px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border: none;
   border-top :rgb(210, 210, 210) 3px dotted;
   height: 1px;
@@ -165,5 +166,32 @@ a:hover {text-decoration: none; color: rgb(163, 163, 163);}
 }
 
 .timeLineDetail {
+  display: inline-block;
+  background-color:white;
+  width:calc(98% - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
+.timeLineTR td{
+  border-top:2px dotted rgb(204, 203, 203);
+}
+
+.detailImage {
+  width: 128px;
+}
+
+.detailText{
+  padding-left: 40px;
+  padding-right : 40px;
+  width:1000px;
+}
+
+.timeLineDetail detailTitleText{
+  font-size:24px;
+  font-weight: bold;
+  color:rgb(80, 80, 80);
 }
