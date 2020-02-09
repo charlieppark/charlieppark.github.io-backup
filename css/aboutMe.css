@@ -1,0 +1,169 @@
+* {
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif;
+}
+
+.header {
+  width:100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: rgb(79, 79, 79);
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Do Hyeon', sans-serif;
+  position: fixed;
+  right:0px;
+  top:0px;
+}
+
+.bodyDiv{
+  margin-top:100px;
+  width:100%;
+  align-items: center;
+  text-align: center;
+}
+
+a:link {text-decoration: none; color: white; transition: 0.2s; cursor:pointer;}
+a:visited {text-decoration: none; color: white;}
+a:active {text-decoration: none; color: white;}
+a:hover {text-decoration: none; color: rgb(163, 163, 163);}
+
+.bodybody{
+  display: inline-block;
+  width:750px;
+  background-color: rgb(240, 240, 240);
+  padding: 40px 10px;
+  border-radius: 10px;
+}
+
+.firstTable{
+  text-align:center;
+  align-items:center;
+  vertical-align: center;
+}
+
+.MyPicture{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+    transition: 0.2s;
+    display: inline-block;
+    padding: 5px;
+    padding-top: 8px;
+    box-shadow: -5px 10px 5px 5px rgba(136, 136, 136,0.5);
+}
+
+.MyPicture:hover {
+  -ms-transform: rotate(-6deg); /* IE 9 */
+  -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
+  transform: rotate(-6deg);
+  box-shadow: -3px 12px 5px 5px rgba(136, 136, 136,0.5);;
+}
+
+.pngPicture{
+  width:calc(100% - 5px);
+  margin-bottom: -10px;
+}
+
+.profile{
+  display: inline-block;
+  width: 98%;
+  border-collapse: collapse;
+  background-color: white;
+  align-self: center;
+  text-align: center;
+  border:2px solid rgb(44, 69, 134);
+}
+
+.profile td,tr {
+  line-height: 40px;
+  border:1px solid rgb(193, 202, 247);
+}
+
+.profile .title{
+  padding-left: 20px;
+  text-align: left;
+  background-color: rgb(44, 69, 134);
+  color:white;
+  line-height: 80px;
+  border: 1px solid rgb(44, 69, 134);
+}
+
+.profile .type{
+  width:30%
+}
+
+.bodyDiv hr{
+  line-height: 100px;
+  margin-top:60px;
+  margin-bottom: 20px;
+  border: none;
+  border-top :rgb(210, 210, 210) 3px dotted;
+  height: 1px;
+}
+
+.bodyDiv h1{
+  font-size:40px;
+  font-family: 'Do Hyeon', sans-serif;
+  color:rgb(23, 78, 161);
+  transition: 0.5s;
+}
+
+.bodyDiv h1:hover{
+  color:rgb(13, 51, 111);
+}
+
+.timeLineTable{
+  width:100%;
+  height:80px;
+  border-collapse: collapse;
+  margin-top:15px;
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.button{
+  width:80px;
+}
+
+.button div{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  cursor:pointer;
+  transition: 0.1s;
+}
+
+.button div:hover{
+  width:60px;
+  height: 60px;
+}
+
+.button div img{
+  width:48px;
+  height: 48px;
+  transition:0.1s;
+}
+
+.button div img:hover{
+  width: 58px;
+  height: 58px;
+}
+
+.timeLineLink{
+  line-height: 0;
+  margin-top:0px;
+  margin-bottom: 0px;
+  display: block;
+  border: none;
+  border-top :rgb(210, 210, 210) 5px dotted;
+  height: 1px;
+}
+
+.timeLineDetail {
+
+}
