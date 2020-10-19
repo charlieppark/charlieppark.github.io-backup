@@ -1,0 +1,385 @@
+* {
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif;
+}
+
+.header {
+  width:100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: rgb(79, 79, 79);
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  position: fixed;
+  right:0px;
+  top:0px;
+  z-index: 1;
+}
+
+.headerTable{
+  width:100%;
+  height: 100%;
+}
+
+.headerTable i{
+  font-size: 60px;
+  color:white;
+  transition: 0.2s;
+  transition-property: color;
+  cursor:pointer;
+}
+
+.headerTable i:hover{
+  color:rgb(163, 163, 163);
+}
+
+.homeBtn{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.bodyDiv{
+  margin-top:100px;
+  width:100%;
+  align-items: center;
+  text-align: center;
+}
+
+a:link {text-decoration: none; color: white; transition: 0.2s; cursor:pointer; transition-property: color}
+a:visited {text-decoration: none; color: white;}
+a:active {text-decoration: none; color: white;}
+a:hover {text-decoration: none; color: rgb(163, 163, 163);}
+
+.bodybody{
+  display: inline-block;
+  width:750px;
+  background-color: rgb(240, 240, 240);
+  padding: 40px 10px;
+  border-radius: 10px;
+}
+
+.firstTable{
+  text-align:center;
+  align-items:center;
+  vertical-align: center;
+}
+
+.MyPicture{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+    transition: 0.2s;
+    display: inline-block;
+    padding: 5px;
+    padding-top: 8px;
+    box-shadow: -5px 10px 5px 5px rgba(136, 136, 136,0.5);
+}
+
+.MyPicture:hover {
+  -ms-transform: rotate(-6deg); /* IE 9 */
+  -webkit-transform: rotate(-6deg); /* Chrome, Safari, Opera */
+  transform: rotate(-6deg);
+  box-shadow: -3px 12px 5px 5px rgba(136, 136, 136,0.5);;
+}
+
+.pngPicture{
+  width:calc(100% - 5px);
+  margin-bottom: -10px;
+}
+
+.profile{
+  display: inline-block;
+  width: 98%;
+  border-collapse: collapse;
+  background-color: white;
+  align-self: center;
+  text-align: center;
+  border:4px solid rgb(44, 69, 134);
+}
+
+.profile td,tr {
+  line-height: 40px;
+  border:1px solid rgb(193, 202, 247);
+}
+
+.profile .title{
+  padding-left: 20px;
+  text-align: left;
+  background-color: rgb(44, 69, 134);
+  color:white;
+  line-height: 80px;
+  border: 1px solid rgb(44, 69, 134);
+}
+
+.profile .type{
+  width:30%
+}
+
+.bodyDiv hr{
+  line-height: 100px;
+  margin-top:60px;
+  margin-bottom: 40px;
+  border: none;
+  border-top :rgb(210, 210, 210) 3px dotted;
+  height: 1px;
+}
+
+.bodyDiv h1{
+  font-size:40px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:rgb(23, 78, 161);
+  transition: 0.5s;
+  transition-property: color;
+  cursor:pointer;
+}
+
+.bodyDiv h1:hover{
+  color:rgb(8, 35, 78);
+}
+
+.timeLineTable{
+  width:100%;
+  height:80px;
+  border-collapse: collapse;
+  margin-top:15px;
+  border: 2px solid rgb(240, 240, 240);
+}
+
+.button{
+  width:80px;
+}
+
+.button div{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  cursor:pointer;
+  transition: 0.1s;
+}
+
+.button div:hover{
+  width:60px;
+  height: 60px;
+}
+
+.button div img{
+  width:55px;
+  height: 55px;
+  transition:0.1s;
+}
+
+.button div img:hover{
+  width: 64px;
+  height: 64px;
+}
+
+.timeLineLink{
+  line-height: 0;
+  margin-top:0px;
+  margin-bottom: 0px;
+  display: block;
+  border: none;
+  border-top :rgb(210, 210, 210) 5px dotted;
+  height: 1px;
+}
+
+.timeLineDetail {
+  display: inline-block;
+  background-color:white;
+  width:calc(98% - 40px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.timeLineTR td{
+  border-top:2px dotted rgb(204, 203, 203);
+}
+
+.detailImage {
+  width: 128px;
+}
+
+.detailText{
+  padding-left: 40px;
+  padding-right : 40px;
+  width:1000px;
+}
+
+.timeLineDetail detailTitleText{
+  font-size:24px;
+  font-weight: bold;
+  color:rgb(80, 80, 80);
+  display: block;
+  line-height: 35px;
+  margin:0px;
+  padding:0px;
+}
+
+.timeLineDetail detailText {
+  display: block;
+  line-height: 25px;
+  color:rgb(144, 144, 144);
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.abilityTable{
+  margin-top:20px;
+  width: 100%;
+}
+
+.abilityDiv{
+  display: inline-block;
+  width:100%;
+  height: 190px;
+  background-color: rgb(44, 103, 193);
+  border-radius: 15px;
+  color:white;
+  line-height: 16px;
+  transition: 0.5s;
+  cursor:grab;
+}
+
+.abilityDivInner{
+  display: inline-block;
+  position: relative;
+  width:100%;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+.abilityDiv:hover {
+  background-color: rgb(8, 35, 77);
+}
+
+.abilityDiv i{
+  font-size: 40px;
+}
+
+.abilityImg{
+  width:60%;
+  transition: 0.4s;
+}
+
+.abilityDiv:hover .abilityImg{
+  width:35%;
+}
+
+.abilityName{
+  display: inline-block;
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 22pt;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top:10px;
+  margin-bottom: 10px;
+  transition:0.2s;
+}
+
+.abilityDiv:hover .abilityName{
+  margin-top:5px;
+  margin-bottom: 5px;
+}
+
+.hiddenTable{
+  overflow:hidden;
+  height: 0px;
+  transition: 0.2s;
+  text-align: center;
+  align-items: center;
+  font-size: 10pt;
+}
+
+.abilityDiv:hover .hiddenTable{
+  height:40px;
+}
+
+.proc{
+  background-color: rgb(44, 103, 193);
+  height: 4px;
+  left:50%;
+  top:50%;
+  transform: translate(5%,200%);
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+  line-height: 1px;
+  font-size: 1px;
+  border-collapse: collapse;
+  border:2px solid rgb(44, 103, 193);
+  transition: 0.3s;
+}
+
+.abilityDiv:hover .proc{
+  background-color: rgb(8, 35, 77);
+  border:2px solid rgb(8, 35, 77);
+}
+
+.abilityTRTD {
+  margin:0px;
+  padding:0px;
+  overflow: hidden;
+  line-height: 4px;
+  font-size: 4px;
+}
+
+.progressBar{
+  display: inline-block;
+  background-color: white;
+  width: 0%;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  margin:0px;
+  padding:0px;
+}
+
+.abilityDiv:hover .progressBar{
+  width: 100%;
+}
+
+.footer {
+  margin-top:80px;
+  height: 200px;
+  background-color: rgb(219, 216, 216)
+}
+
+.toolsDiv{
+  width:100%;
+  display: inline-block;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(217, 216, 216);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-top:20px;
+}
+
+.toolsDivInner{
+  width:calc(calc(145px * 10) + calc(5px * 10) + 1px);
+  text-align: left;
+  align-items: left;
+}
+
+.toolItem{
+  display: inline-block;
+  margin-right: 5px;
+  width:140px;
+  height:140px;
+  background-color: rgb(128, 183, 233);
+  border-radius: 10px;
+  cursor:pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  color:white;
+  font-size:16pt;
+  text-align: center;
+  vertical-align:middle;
+}
