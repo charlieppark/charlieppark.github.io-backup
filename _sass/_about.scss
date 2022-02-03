@@ -1,0 +1,305 @@
+.aboutme{
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+}
+
+.aboutme_title {
+  width: 100%;
+  float: none;
+}
+
+.aboutme_title_ko {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.aboutme_title_en {
+  font-size: 40px;
+  margin-left: 30px;
+  color:$primary;
+  opacity: 0.5;
+
+  @media (max-width:800px) {
+    font-size: 30px;
+    display: block;
+    margin: 0;
+  }
+}
+
+.aboutme_picture {
+  background-color: red;
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+  margin-right: 20px;
+
+  @media (max-width:800px) {
+    width: 165px;
+    height: 165px;
+    margin-right: 30px;
+  }
+
+  @media (min-width:$break-large) {
+    display: none;
+  }
+}
+
+.aboutme_subtitle {
+  display: block;
+  font-size: 24px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+
+  @media (max-width:$break-small) {
+    font-size: 18px;
+  }
+}
+
+.aboutme_picture img {
+  margin-top: 0px;
+  border-radius: 8px;
+}
+
+.aboutme_section {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.aboutme_section:last-child {
+  margin-bottom: 0;
+}
+
+.aboutme_greeting {
+  color:$grey-8;
+  line-height: 25px;
+  padding-top: -10px;
+}
+
+.aboutme_greeting_subdiv {
+  margin-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+
+  @media (max-width: $break-small) {
+    margin-top: 10px;
+  }
+}
+
+.aboutme_greeting_subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color:$grey-0;
+}
+
+.aboutme_greeting_subtitle span {
+  margin-right: 10px;
+}
+
+.text_badge {
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 3px;
+  margin-bottom: 10px;
+  color:white;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.text_badge:hover {
+  opacity: 1;
+}
+
+.text_badge_head {
+  padding:0px 10px;
+  background: linear-gradient(180deg,rgb(84, 84, 84),rgb(60, 60, 60));
+  background-color: white;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: -3px;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 25px;
+  height: 25px;
+  float:left;
+}
+
+.text_badge_content {
+  padding:0px 10px;
+  background: linear-gradient(180deg,$primary,$primary-dark);
+  color:white;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  line-height: 25px;
+  display: inline-block;
+  height: 25px;
+  float:none;
+}
+
+.aboutme_section_title{
+  padding-left: 20px;
+  font-size: 24px;
+  border-left: 7px solid $primary-dark;
+  line-height: 40px;
+  height: 40px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutme_introduce_section li {
+  background: linear-gradient(90deg, rgb(250, 250, 250),rgb(250, 250, 250),#d4c9f0, #d4c9f0);
+  background-size: 300%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding : 0px 20px;
+  transition: 0.3s;
+  cursor:default;
+}
+
+.aboutme_introduce_section td {
+  line-height: 40px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.aboutme_introduce_section li:hover {
+  background-position: right;
+
+  td { color:$primary-dark; }
+}
+
+.aboutme_introduce_section i {
+  font-size: 20px;
+  margin-right: 10px;
+  color:$primary-dark;
+  height: 40px;
+  line-height: 40px;
+  float : left;
+}
+
+@media (max-width:$break-small) {
+  .aboutme_introduce_section td {
+    line-height: 25px;
+  }
+
+  .aboutme_introduce_section i {
+    height: 25px;
+    line-height: 25px;
+  }
+}
+
+.aboutme_introduce_section span {
+  float: none;
+}
+
+.aboutme_edu_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aboutme_edu_table td {
+  line-height: 30px;
+}
+
+.aboutme_edu_table_head td {
+  border-bottom: 1px solid $grey-2;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width:$break-small) {
+  .aboutme_edu_table_extra {
+    display: none;
+  }
+}
+
+.aboutme_edu_subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color:rgb(65, 65, 65);
+}
+
+.aboutme_stack_cards {
+  width: 11.5%;
+  margin-left: 0.4%;
+
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  @media (max-width: $break-small) {
+    width:23.5%;
+  }
+}
+
+.aboutme_stack_cards img {
+  transition: 0.2s;
+  transform:scale(0.8);
+  cursor:zoom-in;
+}
+
+.aboutme_badge_desc {
+  display: none;
+  z-index: 99;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.79);
+  color:white;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: 550px;
+  top:-15px;
+  left:50%;
+  transition: 0.3s;
+  opacity: 0;
+  text-align: left;
+}
+
+.aboutme_stack_cards:hover {
+  img {
+    transform:scale(1.0);
+  }
+
+  .aboutme_badge_desc {
+    display: block;
+    opacity: 1;
+    top:-30px;
+  }
+
+  @media (max-width : $break-small) {
+    .badge-left, .badge-right, .badge-left2, .badge-right2,
+    .badge-center1, .badge-center2  {
+      width: 100vw;
+      transform: translate(-50%,0%);
+      position: fixed;
+      top:auto !important;
+      bottom:30px !important;
+    }
+  }
+}
+
+
+
+.badge-left {
+  transform: translate(0%,-50%);
+}
+
+.badge-right {
+  transform: translate(-100%,-50%);
+}
+
+.badge-left2 {
+  transform: translate(-25%,-50%);
+}
+
+.badge-right2 {
+  transform: translate(-75%,-50%);
+}
+
+.badge-center1, .badge-center2 {
+  transform: translate(-50%,-50%);
+}

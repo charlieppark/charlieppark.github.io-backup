@@ -1,0 +1,40 @@
+<li class="catalogue2-item list"
+    {% if page.hash-tag %}
+        {% for tag in page.hash-tag %}
+            data-{{ tag }}
+        {% endfor %}
+    {% endif %}>
+    <div class="img-wrap">
+      <img src="/tech/{{page.date | date: '%y%m%d%H%M'}}/{{ page.image }}" class="catalogue2-img"/>
+    </div>
+    <div class="centents-wrap">
+      <a href="{{ page.url | prepend: site.baseurl }}" >
+
+          {% if page.draft == true %}
+          <span class="catalogue2-tag">
+              Coming Soon
+          </span>
+          {% endif %}
+
+          <div class="catalogue2-info transition">
+              <h1 class="catalogue2-title">
+                  {{ page.title }}
+              </h1>
+              <p class="catalogue2-sub">
+                  {{ page.subtitle }}
+              </p>
+              <p class="catalogue2-date">
+                  {{ page.date }}
+              </p>
+              <p class="catalogue2-body">
+                  {{ page.content | strip_html | truncate: 85 }}
+              </p>
+          </div>
+      </a>
+          <div>
+              {% include post-list-hashtag.html %}
+          </div>
+
+    </div>
+
+</li>
