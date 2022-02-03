@@ -9,25 +9,24 @@
 }
 
 .aboutme_title_ko {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 .aboutme_title_en {
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 30px;
   color:$primary;
   opacity: 0.5;
 
   @media (max-width:800px) {
-    font-size: 30px;
+    font-size: 18px;
     display: block;
     margin: 0;
   }
 }
 
 .aboutme_picture {
-  background-color: red;
   float: left;
   width: 120px;
   height: 120px;
@@ -49,10 +48,19 @@
   display: block;
   font-size: 24px;
   opacity: 0.7;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
+  @media (max-width:$break-large) {
+    margin-bottom: 45px;
+  }
 
   @media (max-width:$break-small) {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  @media (max-width:490px) {
+    margin-bottom: 40px;
+    font-size: 15px;
   }
 }
 
@@ -64,7 +72,7 @@
 .aboutme_section {
   display: block;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .aboutme_section:last-child {
@@ -79,7 +87,6 @@
 
 .aboutme_greeting_subdiv {
   margin-top: 20px;
-  padding-left: 20px;
   margin-bottom: 5px;
 
   @media (max-width: $break-small) {
@@ -150,12 +157,12 @@
 }
 
 .aboutme_introduce_section li {
-  background: linear-gradient(90deg, rgb(250, 250, 250),rgb(250, 250, 250),#d4c9f0, #d4c9f0);
+  background: linear-gradient(90deg, rgb(240, 240, 240),rgb(240, 240, 240),#d4c9f0, #d4c9f0);
   background-size: 300%;
   border-radius: 5px;
   margin-bottom: 5px;
   padding : 0px 20px;
-  transition: 0.3s;
+  transition: 0.6s;
   cursor:default;
 }
 
@@ -205,6 +212,11 @@
 
 .aboutme_edu_table td {
   line-height: 30px;
+
+  @media (max-width: $break-small) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
 
 .aboutme_edu_table_head td {
@@ -222,7 +234,8 @@
 .aboutme_edu_subtitle {
   font-size: 17px;
   font-weight: 400;
-  color:rgb(65, 65, 65);
+  color:rgb(163, 163, 163);
+  margin-bottom: 10px;
 }
 
 .aboutme_stack_cards {
@@ -302,4 +315,77 @@
 
 .badge-center1, .badge-center2 {
   transform: translate(-50%,-50%);
+}
+
+.aboutme_extra_card {
+  width: 48%;
+  height: 200px;
+  margin-bottom: 12px;
+  display: inline-block;
+  span {display: block;}
+  margin-left: 1%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.aboutme_extra_card_img_td {
+  width: calc(200px - 10px);
+  height: calc(200px - 10px);
+
+  img {
+    margin-top:-2px;
+    border-radius: 5px;
+  }
+}
+
+.aboutme_extra_card_img_td2 {
+  padding-left: 5px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.aboutme_extra_card_name {
+  font-weight: 600;
+  font-size: 25px;
+  color:$primary;
+  margin-bottom: 5px;
+}
+
+.aboutme_extra_card_period {
+  margin-bottom: 10px;
+}
+
+.aboutme_extra_card_sub {
+  color: rgb(82, 43, 98);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.aboutme_extra_card_desc {
+  color:$grey-1;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@media (max-width:1480px) {
+  .aboutme_extra_card {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .aboutme_extra_card_img_td2 {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:$break-small) {
+  .aboutme_extra_card_img_td {
+    display: block;
+    position: relative;
+    width: calc(150px - 6px);
+    height: calc(150px - 6px);
+    margin-top: 10px !important;
+  }
 }

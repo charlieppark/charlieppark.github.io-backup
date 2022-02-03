@@ -60,7 +60,7 @@
         font-size: 22px;
       }
       @media (max-width: $break-small) {
-        font-size: 23px;
+        font-size: 20px;
         margin-top: 5px;
       }
     }
@@ -136,8 +136,6 @@
 
       @media (max-width: $break-small) {
         background: none;
-        border-image : linear-gradient(90deg,#c4c5fe,#9166fc);
-        border-image-slice: 1;
       }
     }
 

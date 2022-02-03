@@ -179,14 +179,9 @@
 	table-layout: fixed;
 }
 
-.home_post_table_contents table td{
-	overflow: hidden;
-}
-
 .home_post_table_contents td:first-child{
 	padding-left: 10px;
-	width: calc(100% - 80px) !important;
-	overflow:hidden;
+	overflow: hidden;
 	white-space : nowrap;
 	text-overflow: ellipsis;
 	height: 18px;
@@ -203,7 +198,8 @@
 }
 
 .home_post_table_head td:last-child{
-	width: 80px;
+	display: table-cell;
+	width: 80px !important;
 }
 
 .home_post_table_contents table tr:first-child{
