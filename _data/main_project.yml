@@ -1,0 +1,46 @@
+- name : 혼합 현실 협업 솔루션
+  img : ./img/mp_01.png
+  url : /project/
+  desc : Mixed Reality 기반 산업용 협업 지원 시스템 핵심 기술 개발
+  keyword :
+    - Mixed Reality
+    - Holo Lens
+
+- name : 스마트 발전소 D.T.
+  img : ./img/mp_02.png
+  url : /project/
+  desc : 새만금 재생 에너지 발전소 관리를 위한 디지털 트윈 개발
+  keyword :
+    - Digital Twin
+    - Energy IT
+
+- name : Smart Deployment
+  img : ./img/mp_03.png
+  url : /project/
+  desc : CAD 데이터를 통한 강화학습 공사 시뮬레이터
+  keyword :
+    - Simulator
+    - '3D Mesh'
+
+- name : LiDAR 시뮬레이터
+  img : ./img/mp_04.png
+  url : /project/
+  desc : HDRP 기반 LiDAR 데이터 시뮬레이터 & 제너레이터
+  keyword :
+    - Simulator
+    - LiDAR
+    - ROS
+
+- name : RFL 크레인 솔루션
+  img : ./img/mp_05.png
+  url : /project/
+  desc : Unity ML-Agent 기반 크레인 공사 스케쥴링 솔루션
+  keyword :
+    - ML-Agent
+
+- name : BlackIce 시뮬레이터
+  img : ./img/mp_06.png
+  url : /project/
+  desc : 기상서버 데이터 기반 블랙 아이스 시뮬레이터 개발
+  keyword :
+    - Simulator

@@ -1,0 +1,44 @@
+- name : MR 협업 시스템
+  img : ./img/main_project_01.gif
+  url : /project/
+  desc : MR 기반 산업용 협업 지원 시스템 핵심 기술 개발
+
+- name : 스마트 발전소 DT
+  img : ./img/main_project_02.png
+  url : /project/
+  desc : 새만금 재생 에너지 발전소 관리를 위한 디지털 트윈 개발
+
+- name : Smart Deployment
+  img : ./img/main_project_03.png
+  url : /project/
+  desc : CAD 데이터를 통한 강화학습 공사 스케쥴러
+
+- name : LiDAR 시뮬레이터
+  img : ./img/main_project_04.png
+  url : /project/
+  desc : HDRP 기반 LiDAR 데이터 시뮬레이터 & 제너레이터
+
+- name : RFL 크레인 시뮬레이터
+  img : ./img/main_project_05.png
+  url : /project/
+  desc : ML-Agent 기반 크레인 시뮬레이터
+
+- name : BlackIce 시뮬레이터
+  img : ./img/main_project_06.png
+  url : /project/
+  desc : Unity 엔진 기반 블랙 아이스 시뮬레이터 개발
+
+- name : PCB 검사기
+  img : ./img/main_project_07.png
+  url : /project/
+  desc : 라즈비안 환경에서 동작하는 이미지 분석 툴
+
+- name : 뉴로모픽 얼굴인식 모듈
+  img : ./img/main_project_08.png
+  url : /project/
+  desc : 뉴로모픽 칩을 이용한 저전력 얼굴 인식 모듈 개발
+
+- name : Fluid Track
+  img : ./img/main_project_09.png
+  url : /project/
+  desc : 주간빈뇨증후군 환아를 위한 셀프트레킹 솔루션 개발

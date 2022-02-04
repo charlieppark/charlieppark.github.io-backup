@@ -252,7 +252,7 @@
 
 .aboutme_stack_cards img {
   transition: 0.2s;
-  transform:scale(0.8);
+  transform:scale(0.9);
   cursor:zoom-in;
 }
 
@@ -270,6 +270,11 @@
   transition: 0.3s;
   opacity: 0;
   text-align: left;
+  font-weight: 300;
+}
+
+.HL {
+  color:$yellow;
 }
 
 .aboutme_stack_cards:hover {
@@ -388,4 +393,158 @@
     height: calc(150px - 6px);
     margin-top: 10px !important;
   }
+}
+
+.aboutme_project_center_div {
+  margin-top: 30px;
+  text-align: center; align-items: center;
+}
+
+.aboutme_project_card {
+  width: calc(33% - 10px);
+  margin-left: 8px;
+  margin-bottom: 15px;
+  text-align: left;
+  align-items: left;
+  display: inline-block;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.57);
+  background-color: #f1f1f1;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto;
+
+  @media (min-width: 1920px) {min-height: 330px;}
+  @media (max-width: 1630px) {width: calc(50% - 10px); height: 360px;}
+  @media (max-width: 1620px) {width: calc(50% - 10px); height: auto;}
+  @media (max-width: 1436px) {width: calc(50% - 10px); height: 323px;}
+  @media (max-width: 1303px) {width: calc(50% - 10px); height: auto;}
+  @media (max-width: 970px) {width: 100%; margin-left:0px; margin-bottom: 20px;}
+}
+
+.aboutme_project_card:hover {
+  .aboutme_project_card_main
+  .aboutme_project_card_img
+  .aboutme_proejct_card_real_img {
+    transform: scale(1.2);
+  }
+
+  .aboutme_project_card_main
+  .aboutme_project_card_img
+  .aboutme_project_card_img_dark {
+    opacity: 0.2;
+
+    @media (max-width: 970px) { opacity: 0; }
+  }
+}
+
+.aboutme_project_card_img_dark {
+  z-index: 2;
+  background: #000000;
+  opacity: 0.6;
+  @media (max-width: 970px) { opacity: 0; }
+}
+
+.aboutme_project_card_img {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: 0 !important;
+  background: red;
+  overflow: hidden;
+}
+
+.aboutme_project_card_img:after {
+  content: "";
+  display: block;
+  padding-bottom: 50%;
+}
+
+.aboutme_project_card_img_dark,.aboutme_proejct_card_real_img {
+  transition: 0.3s;
+  position: absolute;
+background-position: center center; background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutme_project_card_text {
+  padding : 20px;
+}
+
+.aboutme_project_card_title {
+  font-size: 23px;
+  color:$primary;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.aboutme_project_card_desc {
+  font-size: 14px;
+  color : $grey-7;
+  font-weight: 300;
+}
+
+.aboutme_project_card_keyword {
+  margin-top: 10px;
+  font-size: 13px;
+  padding : 2px 10px;
+  border-radius: 3px;
+  background-color: $primary;
+  color:white;
+  display: inline-block !important;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.aboutme_project_card_text span {
+  display: block;
+}
+
+.aboutme_thesis_table_head td {
+  text-align: center;
+  border-bottom: 1px solid $grey-8;
+}
+
+.aboutme_thesis_table_tr td:first-child {padding-left: 10px;}
+
+.aboutme_thesis_table tr td:nth-child(2) {
+  width: 110px;
+  text-align: center;
+
+  @media (max-width: $break-small) {
+    width: 55px;
+  }
+}
+
+.aboutme_thesis_table tr td:nth-child(3),
+.aboutme_thesis_table tr td:nth-child(4) {
+  width: 80px;
+  text-align: center;
+
+  @media (max-width: $break-small) {
+    width: 50px;
+  }
+}
+
+.aboutme_thesis_table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing:0px;
+}
+
+.aboutme_thesis_table td {
+  padding:5px;
+}
+
+.aboutme_thesis_table_tr {
+
+  @media (max-width: $break-small) {
+    font-size: 10px;
+  }
+}
+
+.aboutme_thesis_table_tr:nth-child(even) {
+  background-color: #fAfAfA;
 }
