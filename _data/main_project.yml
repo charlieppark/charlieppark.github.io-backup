@@ -2,6 +2,9 @@
   img : ./img/mp_01.png
   url : /project/
   desc : Mixed Reality 기반 산업용 협업 지원 시스템 핵심 기술 개발
+  task :
+    - HoloLens용 사용자 인터페이스 직접 구현
+    - TCP/IP 핸들러, Rest Client 기능 직접 구현
   keyword :
     - Mixed Reality
     - Holo Lens
@@ -10,14 +13,19 @@
   img : ./img/mp_02.png
   url : /project/
   desc : 새만금 재생 에너지 발전소 관리를 위한 디지털 트윈 개발
+  task :
+    - WebGL 환경에서 Web-Unity간 상호작용 직접 구현
+    - 서버 기반의 Digital Twin 직접 구현
   keyword :
     - Digital Twin
-    - Energy IT
+    - WegGL
 
 - name : Smart Deployment
   img : ./img/mp_03.png
   url : /project/
   desc : CAD 데이터를 통한 강화학습 공사 시뮬레이터
+  task :
+    - 런타임 Programmable/Editable mesh 생성 기능 직접 구현
   keyword :
     - Simulator
     - '3D Mesh'
@@ -26,6 +34,9 @@
   img : ./img/mp_04.png
   url : /project/
   desc : HDRP 기반 LiDAR 데이터 시뮬레이터 & 제너레이터
+  task :
+    - HDRP기반의 3D 환경 ( Light, Shader, Material ... ) 구현
+    - LiDAR Sesnor SDK 임포트 및 ROS와 연동
   keyword :
     - Simulator
     - LiDAR
@@ -35,6 +46,8 @@
   img : ./img/mp_05.png
   url : /project/
   desc : Unity ML-Agent 기반 크레인 공사 스케쥴링 솔루션
+  task :
+    - ML-Agent기반의 External python brain 인퍼테이스 구현
   keyword :
     - ML-Agent
 
@@ -42,5 +55,8 @@
   img : ./img/mp_06.png
   url : /project/
   desc : 기상서버 데이터 기반 블랙 아이스 시뮬레이터 개발
+  task :
+    - 서버의 기상 로그를 받아오는 통신 기능 구현
+    - 시간대별로 3D 환경에서 표현하는 시뮬레이션 기능 구현
   keyword :
     - Simulator

@@ -128,6 +128,7 @@
   <div class="aboutme_section">
     <div class = "aboutme_project_section">
       <div class="aboutme_section_title">메인 프로젝트</div>
+      <div class="aboutme_edu_subtitle">카드를 누르면 상세 페이지로 이동합니다.</div>
       <div class="aboutme_project_center_div">
       {% assign main_p = site.data.main_project %}
       {% for p in main_p %}
@@ -141,10 +142,18 @@
           <div class="aboutme_project_card_text">
             <span class="aboutme_project_card_title">{{ p.name }}</span>
             <span class="aboutme_project_card_desc">{{ p.desc }}</span>
-            {% for k in p.keyword %}
-            <span class="aboutme_project_card_keyword">{{ k }}</span>
+            <table style="width:95%;margin:10px 0px;">
+            {% for t in p.task %}
+            <tr><td class="aboutme_project_card_task" style="width:10px; text-align:center;">◾</td><td style="padding-left:5px;">
+            <span class="aboutme_project_card_task">{{ t }}</span></td></tr>
             {% endfor %}
+            </table>
           </div>
+        </div>
+        <div class="aboutme_project_card_keyword_wrap">
+        {% for k in p.keyword %}
+        <span class="aboutme_project_card_keyword">{{ k }}</span>
+        {% endfor %}
         </div>
       </div> </a>
       {% endfor %}
@@ -173,7 +182,45 @@
   <div class="aboutme_section">
     <div class = "aboutme_extra_section">
       <div class="aboutme_section_title">다른 프로젝트</div>
-      작성중
+      {% assign projects = site.data.other_project%}
+      {% for p in projects %}
+      <div class="aboutme_other_project_div">
+        <div class="aboutme_other_project_img_td">
+          <img src= "{{ p.img }}" class="aboutme_other_project_img">
+        </div>
+        <div class="aboutme_other_project_text_td">
+          <span class="aboutme_other_project_{{ p.state }}">{{ p.state }}</span>
+          <span class="aboutme_other_project_title">{{ p.name }}</span>
+          <span class="aboutme_other_project_short_desc">{{ p.short-desc }}</span>
+          <div class="aboutme_other_project_language_platform_div">
+          {% for l in p.language%}
+            <span class="aboutme_other_project_language">{{ l }}</span>
+          {% endfor %} {% for pl in p.platform%}
+            <span class="aboutme_other_project_platform">{{ pl }}</span>
+          {% endfor %} </div>
+
+          {% if p.git-url != "" %}
+          <a href="{{ p.git-url }}" class= "aboutme_other_project_git_a">
+            <div class="text_badge text_badge2">
+              <span class="text_badge_head"><i class="fab fa-github-alt"></i></span>
+              <span class = "text_badge_content text_badge_content2">{{ p.git-name }}</span>
+            </div>
+          </a>
+          {% endif %}
+
+          <span class="aboutme_other_project_desc">{{ p.long-desc }}</span>
+          {% if p.warning != "" %}
+          <span class="aboutme_other_project_warning">{{ p.warning }}</span>
+          {% endif%}
+
+          <div class="aboutme_other_project_ref_wrap_div">{% for ref in p.reference %}
+          <a href="{{ref.url}}"><div class="aboutme_other_project_ref_div">
+            <img src="{{ref.img}}">
+          </div></a>
+          {% endfor %}</div>
+        </div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 
