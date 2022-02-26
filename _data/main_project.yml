@@ -30,26 +30,26 @@
     - Simulator
     - '3D Mesh'
 
-- name : LiDAR 시뮬레이터
-  img : ./img/mp_04.png
+- name : Path Generator
+  img : ./img/mp_04.gif
   url : /project/
-  desc : HDRP 기반 LiDAR 데이터 시뮬레이터 & 제너레이터
+  desc : '3D공간을 등속력으로 움직 일 수 있는 라이브러리 구현'
   task :
-    - HDRP기반의 3D 환경 ( Light, Shader, Material ... ) 구현
-    - LiDAR Sesnor SDK 임포트 및 ROS와 연동
+    - Bezier Curve를 응용한 자연스러운 커브 및 불규칙한 움직임 구현
+    - 라이브러리 작업 및 도큐먼트 작성
   keyword :
-    - Simulator
-    - LiDAR
-    - ROS
+    - Open Source
 
-- name : RFL 크레인 솔루션
-  img : ./img/mp_05.png
+- name : Flow Visualizer
+  img : ./img/mp_05.gif
   url : /project/
-  desc : Unity ML-Agent 기반 크레인 공사 스케쥴링 솔루션
+  desc : 유체나 물류의 흐름(양/속력/방향)을 한 눈에 파악할 수 있도록 만드는 라이브러리 구현
   task :
-    - ML-Agent기반의 External python brain 인퍼테이스 구현
+    - Unity Custom Editor 및 GUI Editor 작업
+    - 라이브러리 작업 및 도큐먼트 작성
   keyword :
-    - ML-Agent
+    - Open Source
+    - Visualizer
 
 - name : BlackIce 시뮬레이터
   img : ./img/mp_06.png
