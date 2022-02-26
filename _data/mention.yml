@@ -1,6 +1,8 @@
 - writer: KimYC1223
   date: 2022-02-25 14:00
-  message: 🎓 2020.03 - 2022.02 컴퓨터 과학과 석사 졸업했습니다! 많이 부족했지만 도움 주신 분들 너무나 감사합니다!
+  title : 연세대 석사 과정 졸업!
+  message: <b>2020.03 - 2022.02 컴퓨터 과학과 석사</b> 졸업했습니다!<br>많이 부족했지만 도움 주신 분들 너무나 감사합니다!
+  emoji : 🎓
   media:
     - type: photo
       name: 2022022501
@@ -10,3 +12,52 @@
       name: 2022022503
     - type: photo
       name: 2022022504
+
+- writer: KimYC1223
+  date: 2021-12-15 17:42
+  title : 가을이 겨울이 별이
+  message: 세상 귀여운 우리집 고양이들...<b>가을이(까망), 겨울이(치즈), 별이(고등어)</b><br>아쉽게도 자취를 시작하면서 자주 볼 수 없게 되었음.. ㅠㅜ
+  emoji : 🐈
+  media:
+    - type: photo
+      name: 2021121501
+    - type: photo
+      name: 2021121502
+    - type: photo
+      name: 2021121503
+    - type: photo
+      name: 2021121504
+    - type: photo
+      name: 2021121505
+    - type: photo
+      name: 2021121506
+    - type: photo
+      name: 2021121507
+    - type: photo
+      name: 2021121508
+
+- writer: KimYC1223
+  date: 2021-07-17 13:28
+  title : 야탑역으로 이사 완료!
+  message: 드디어 야탑쪽으로 자취방을 구해서 이사를 오게 되었다!<br>비록 큰 방은 아니지만 큰 창문과 아름다운 뷰가 인상깊어서 계약하게 되었다ㅎㅎ
+  emoji : 📦
+  media:
+    - type: photo
+      name: 2021071701
+    - type: photo
+      name: 2021071702
+    - type: photo
+      name: 2021071703
+
+- writer: KimYC1223
+  date: 2021-05-29 19:56
+  title : 폭풍을 부르는 바베큐 파티
+  message: 김지밈 김웁웁 김남지씨와 함께 떠나는 폭풍을 부르는 바베큐 스쿼드<br>매우 오래간만의 여행이라 설레고 재미있었음!<br>내가 만든 김치찌개는 망해서 사진을 찍지 않음 ㅜ
+  emoji : 🎉‍
+  media:
+    - type: photo
+      name: 2021052901
+    - type: photo
+      name: 2021052902
+    - type: photo
+      name: 2021052903

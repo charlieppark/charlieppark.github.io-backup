@@ -3,12 +3,14 @@
 <div class="branch_point"></div>
 <div class="thumbnail">
   {% assign thumbnail = site.static_files | where: 'basename', writer.id | first %}
-  <img class="profile" src="https://avatars.githubusercontent.com/u/40852277"/>
-  <div class="emoji"><span>{{ writer.emoji }}</span></div>
+  <div class="emoji"><span>{{ mention.emoji }}</span></div>
 </div>
 <div class="content_wrap">
   <div class="line"></div>
   <div class="mention" upload="{{mention.date}}">
+    <div class="message_title">
+      {{ mention.title }}
+    </div>
     <div class="message">
       {{ mention.message }}
     </div>

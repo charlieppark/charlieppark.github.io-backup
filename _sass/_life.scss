@@ -19,7 +19,7 @@
     &:before {
       position: absolute;
       background-color: $pick-color;
-      content: 'alldev';
+      content: 'KimYC Master Branch';
       margin: -11px 0 0 200px;
       width: max-content;
       padding: 2px 5px;
@@ -129,7 +129,7 @@
           position: absolute;
         }
 
-        .profile {
+        .emoji {
           margin: 0;
           float: left;
           border-radius: 50%;
@@ -137,20 +137,13 @@
           height: 100%;
           object-fit: cover;
           border: solid $commit-border $commit-color;
-        }
-
-        .emoji {
-          background-color: white;
-          bottom: 0;
-          right: 0;
-          display: flex;
-          border-radius: 50%;
-          width: 18px;
-          height: 18px;
 
           span {
-            margin: auto;
-            font-size: 9px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            line-height: 40px;
+            display: block;
           }
         }
       }
@@ -178,6 +171,21 @@
 
             @media (max-width: $break-small) {
               font-size: 13px;
+            }
+          }
+
+          .message_title {
+            display: inline-block;
+            background-color: $secondary;
+            color:#3c3a58;
+            font-weight: bold;
+            padding:5px 30px;
+            border-radius: 4px;
+            width: auto;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            @media (max-width: $break-small) {
+              font-size: 16px;
             }
           }
 
