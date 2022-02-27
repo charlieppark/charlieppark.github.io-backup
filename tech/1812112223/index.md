@@ -174,7 +174,7 @@ SOPC를 고르는 화면에서, 아까 만들어졌던 sopcinfo 파일을 선택
 
 아래와 같은 코드를 입력한다.
 
-```C
+``` c
 #include <stdio.h>
 #include <system.h>
 #include <sys/alt_irq.h>
@@ -256,7 +256,7 @@ void clear_screen(){
 
 위에서 설명했던 plot_pixel 코드가 살짝 달라졌다는 점인데,
 
-```C
+``` c
 void plot_pixel(int x, int y, short line_color){
     *(short *)(pixel_buffer_start + (y << 10) + (x<<1)) = line_color;
 }
@@ -264,7 +264,7 @@ void plot_pixel(int x, int y, short line_color){
 
 에서
 
-```C
+``` c
 void plot_pixel(int x, int y, char line_color){
    *(char *)(pixel_buffer_start + (y << 9) + (x)) = line_color;
 }

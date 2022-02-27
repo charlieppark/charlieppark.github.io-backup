@@ -463,3 +463,12 @@ video {
 .thumbnail:hover {
 	cursor:pointer;
 }
+
+.post table {
+	width: 90%;
+	background-color: #fbfbfb;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(176, 176, 176);
+	padding: 5px 20px;
+}
