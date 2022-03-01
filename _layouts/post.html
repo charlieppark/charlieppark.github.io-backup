@@ -34,25 +34,27 @@ layout: main
             </h1>
             현재 열심히 글을 쓰고 있어요. 조금만 기다려주세요!
         </div>
-    {% endif %}
+    {% elsif %}
 
-    {{ content }}
+      {{ content }}
 
-    {% if page.hash-tag %}
-    <div class="post-tags">
-        {% include post-hashtag.html %}
-    </div>
-    {% endif %}
+      {% if page.hash-tag %}
+      <div class="post-tags">
+          {% include post-hashtag.html %}
+      </div>
+      {% endif %}
 
-    {% include post-footer.html %}
+      {% include post-footer.html %}
 
-    {% if page.layout == 'post' %}
-        <script src="https://utteranc.es/client.js"
-                repo="oy-alldev/tech-blog-comment"
-                issue-term="pathname"
-                theme="preferred-color-scheme"
-                crossorigin="anonymous"
-                async>
-        </script>
+      {% if page.layout == 'post' %}
+          <script src="https://utteranc.es/client.js"
+                  repo="oy-alldev/tech-blog-comment"
+                  issue-term="pathname"
+                  theme="preferred-color-scheme"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+      {% endif %}
+
     {% endif %}
 </div>
