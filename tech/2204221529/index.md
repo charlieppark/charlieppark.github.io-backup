@@ -118,7 +118,7 @@ sudo pip3 install --upgrade pip && sudo pip3 install --upgrade setuptools
 
 아래와 같은 함수를 통해 client를 return 받을 수 있다.
 
-``` Python
+``` python
 from influxdb import InfluxDBClient
 
 def get_influxdb(database_name, host='localhost', port=8086):
@@ -144,7 +144,7 @@ InfluxDB에 원하는 이름의 database에 접속하고, 없으면 새로 만�
 
 아래 처럼 사용한다.
 
-``` Python
+``` python
 client = get_influxdb(database_name='test_db')
 ```
 
@@ -152,7 +152,7 @@ client = get_influxdb(database_name='test_db')
 
 ```client```를 통해, 다른 데이터베이스나 client를 검색 할 수 있다.
 
-``` Python
+``` python
 client.get_list_database() # 데이터베이스 리스트 조회
 client.get_list_measurements() # 현재 선택된 데이터베이스 measurements 리스트 조회
 ```
@@ -167,7 +167,7 @@ Data를 넣는 방법은, ```client.write_points()```를 통해
 
 ```Dict List``` 자료형을, JSON으로 변환하여 전달한다.
 
-``` Python
+``` python
 points = [
     {'measurement':'sensors', 
      'tags':{'sensor_id': 'S001'}, 
@@ -190,7 +190,7 @@ Point들은 따로 시간을 입력해주지 않으면 현 시간을 기준으�
 
 만약, 특정 시간으로 입력 해 주고 싶다면,
 
-``` Python
+``` python
 points = [
     {'measurement':'sensors', 
      'tags':{'sensor_id': 'S001'}, 
@@ -220,7 +220,7 @@ DB에서 값을 가져오는 방법에 대해 알아본다.
 
 client 객체에 query를 보낸 후, return된 객체에서 ```dict```형 데이터를 뽑아낼 수 있다.
 
-``` Python
+``` python
 points = client.query("SELECT * FROM sensors WHERE sensor_id = 'S001'")
 for point in points.get_points():
     print(point)
