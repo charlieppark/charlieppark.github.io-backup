@@ -6,7 +6,7 @@ category: Blog
 title: 코딩테스트 준비
 subtitle: 코딩테스트 준비를 위한 알고리즘 개요
 writer: KimYC1223
-post-header: true
+post-header: false
 image: /img/title.png
 hash-tag: [Algorithm]
 draft : false
