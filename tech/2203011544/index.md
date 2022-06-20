@@ -7,10 +7,9 @@ title: 코딩테스트 준비
 subtitle: 코딩테스트 준비를 위한 알고리즘 개요
 writer: KimYC1223
 post-header: true
-image: /img/title.gif
-header-img: /tech/2203011544/img/bg.png
+image: /img/title.png
 hash-tag: [Algorithm]
-draft : true
+draft : false
 ---
 
 본 게시글은 2022년 상/하반기 코딩테스트를 보다 체계적으로 준비하기 위해, 코딩 테스트 알고리즘을 정리한 글이다.
