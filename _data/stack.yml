@@ -28,15 +28,15 @@
               <li> Github 등급 ( API ： <span id="git_state" style="color:yellow; cursor:pointer;">Github Readme Stats</span> )</li>
               <img src = "https://github-readme-stats.vercel.app/api?username=kimyc1223&amp;count_private=true&amp;hide=contribs,prs&amp;show_icons=true&amp;theme=vue-dark" id="my_git_state" style ="cursor:pointer;">
               <script>
-                git_state = document.getElementById('git_state')
+                git_state = document.getElementById('git_state');
                 git_state.addEventListener('click', () => {
                   location.href="https://github.com/anuraghazra/github-readme-stats";
-                })
+                });
 
-                my_git_state = document.getElementById('my_git_state')
+                my_git_state = document.getElementById('my_git_state');
                 my_git_state.addEventListener('click', () => {
                   location.href="https://github.com/KimYC1223";
-                })
+                });
               </script>
             </ul>
 
