@@ -8,6 +8,18 @@
   keyword :
     - Mixed Reality
     - Holo Lens
+  period: 2018.07 ~ 2020.06
+  desc-details:
+    MS사의 HoloLens와 HoloLens2를 사용하여 실제 산업 현장에서 사용 할 수있는 Mixed Reality 협업 시스템을 구축했음.<br>
+    <br>
+    처음 작업한 큰 규모의 프로젝트로서, UWP에서 빌드및 디버깅을 진행하였고,
+    .NET 프레임워크에서 OpenCV 라이브러리 임포트, 실시간 화상/음성 통화 구현등 다양한 기능을 직접 구현하였음.<br>
+    MR환경에서 사용자가 도움을 받으며 업무를 진행 할 수 있도록 MR전용 인터페이스를 구현
+    간단한 영상처리를 통해 객체나 QR을 인식하거나, 실제 주변 공간 기반의 충돌 체크 기능을 통해 가상 오브젝트 배치 기능을 구현하였습니다.
+
+  function :
+
+  platform : HoloLens, HoloLens2 (UWP)
 
 - name : 스마트 발전소 D.T.
   img : ./img/mp_02.png
