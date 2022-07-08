@@ -13,6 +13,8 @@ hash-tag: [Unity]
 draft : false
 ---
 
+![](./img/bg.png)
+
 # 월드 컴포저를 통한 실제 지형 Obj 파일 추출
 
 디지털 트윈 환경을 구축하기 위해서 실제 지형 정보를 불러와야 할 경우가 있다.
@@ -40,9 +42,10 @@ draft : false
 - [Wolrd Composer](https://assetstore.unity.com/packages/tools/terrain/world-composer-13238)
 - [Terrain To OBJ](https://assetstore.unity.com/packages/tools/terrain/terrain-to-obj-170663)
 
-> 🚨 **WARNING !**
+> 📢 **NOTE**
 > 
-> 실제 지형을 Terrain으로만 가져올 생각이라면, ```Terrain To OBJ``` 에셋은 다운로드 받을 필요가 없다
+> 1. 실제 지형을 Terrain으로만 가져올 생각이라면, ```Terrain To OBJ``` 에셋은 다운로드 받을 필요가 없다
+> 2. 추출한 OBJ를 하나의 OBJ 파일로 합칠 생각이 없다면, ```Blender``` 프로그램은 다운로드 받을 필요가 없다.
 
 ---
 
@@ -181,13 +184,15 @@ Unity는 2019.4.0로 설치하도록 한다.
 
 ![](./img/img_18.png)
 
-만약 Unity Terrain만 필요한 상황이라면, 여기까지만 진행해도 된다.
+> 📢 **NOTE**
+> 
+> 만약 Unity Terrain만 필요한 상황이라면, 여기까지만 진행해도 된다.
 
 ---
 
-## 5. Unity Terrain을 Obj로
+## 5. Unity Terrain을 OBJ로
 
-4번을 통해 만든 Unity Terrain을 Obj로 만드는 방법을 소개한다.
+4번을 통해 만든 Unity Terrain을 ```*.obj```로 만드는 방법을 소개한다.
 
 Unity Editor 상단의 ```Window - Amazing Assets - Terrain To OBJ```를 누른다.
 
@@ -203,7 +208,70 @@ Save 항목에서 Lacation을 ```Custom Folder```로 변경하고, 원하는 pat
 
 잠시 기다리면, 설정한 위치에 청크 개수만큼 폴더가 생겨있고,
 
-폴더 하나마다 청크 OBJ가 생긴것을 볼 수 있다.
+폴더 하나마다 청크 obj가 생긴것을 볼 수 있다.
 
 ![](./img/img_21.png)
 
+---
+
+## 6. OBJ를 하나의 OBJ로
+
+추출한 Obj는 여러 Mesh로 이루어져 있으므로,
+
+하나의 obj로 만드려면 별도의 작업이 필요하다.
+
+이번 포스트에서는 Blender를 이용한 방법을 소개한다.
+
+Blender[[1]](https://namu.wiki/w/Blender)[[2]](https://en.wikipedia.org/wiki/Blender_(software))[[3]](https://www.blender.org/)는 3D 컴퓨터 그래픽 제작 소프트웨어로서,
+
+오픈소스 GPL 라이선스이며, 무료로 사용할 수 있다는 장점이 있다.
+
+일단 다운로드 받은 Blender를 실행시킨다.
+
+그후, ```New File```에서  ```General```을 클릭한다.
+
+![](./img/img_22.png)
+
+블랜더에 대한 기초 동작법은 잘 정리되어 있는 다른 블로그 포스트를 참조하면 좋다.
+
+- [블랜더 2.8 - #2. 기본 조작법](https://itadventure.tistory.com/73?category=715917)
+- [블랜더 2.8 - #3. 쓰리디 뷰포트](https://itadventure.tistory.com/74?category=715917)
+- [블랜더 2.8 - #4. 물체의 이동](https://itadventure.tistory.com/75?category=715917)
+
+일단, 처음 시작하면 ```A```키를 누르고 ```Delete```키를 눌러 모든 객체를 지워준다.
+
+그 후, ```File - Import - Wavefront(.obj)```를 선택한다.
+
+![](./img/img_23.png)
+
+그 다음, 불러올 객체를 선택하고, 오른쪽 ```Geometry``` 탭에서 ```Keep Vert Order```를 선택해주도록 한다.
+
+마지막으로 ```Import OBJ```를 눌러준다.
+
+![](./img/img_24.png)
+
+그럼 정말 놀랄만치 아무 일도 일어나지 않는다.
+
+하지만 일단 신경쓰지 않고 열어야할 파일을 모두 Import해준다.
+
+모두 마치고 나서, 화면의 오른쪽 상단을 보게되면
+
+Import한 객체들이 쌓여 있는 모습을 볼 수 있다.
+
+![](./img/img_25.png)
+
+**그 후, ```A```키를 눌러 전체를 선택하고, ```Ctrl+J```를 눌러 모두 합치기를 누르면 오브젝트가 하나로 합쳐진다.
+
+화면에 보이지 않는 이유는, 지형 객체가 너무 크기 때문이다.
+
+```File - Export - Wavefront(.obj)```를 누르고,
+
+![](./img/img_26.png)
+
+새롭게 뜨는 창에서 원하는 위치와 파일의 이름을 정하고 ```Export OBJ```버튼을눌러 완료한다.
+
+확인해보면 다음과 같다.
+
+![](./img/img_27.png)
+
+<br><br>
