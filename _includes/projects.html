@@ -1,0 +1,75 @@
+{% assign projects = site.data.main_project_detail %}
+
+<div class="projects_MainDiv" id="projects_MainDiv">
+    {% for project in projects  %}
+    <div class="projects_test">
+        <div class="projects_centerDiv">
+            {{ project.name }}
+        </div>
+    </div>
+    {% endfor %}
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+
+        $(document).ready(function () { 
+            const boxList = document.querySelectorAll('.projects_test');
+
+            const options = {
+            root: null, // viewport
+            rootMargin: "0px",
+            threshold: 0.5,  // 50%가 viewport에 들어와 있어야 callback 실행
+            }
+
+            const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('projects_active');
+                } else {
+                entry.target.classList.remove('projects_active');
+                }
+            });
+            }, options);
+
+            // 반복문을 돌려 모든 DOM에 적용
+            boxList.forEach(el => observer.observe(el));
+            
+            let projects_MainDiv = document.getElementById('projects_MainDiv')
+
+            projects_MainDiv.addEventListener("wheel", function(e){
+                e.preventDefault();
+            },{passive : false});
+            projects_MainDiv.addEventListener("scroll", function(e){
+                e.preventDefault();
+            },{passive : false});
+            projects_MainDiv.addEventListener("mousewheel", function(e){
+                e.preventDefault();
+            },{passive : false});
+
+            var mHtml = $("#projects_MainDiv");
+            var page = 1;
+
+            mHtml.animate({scrollTop : 0},10);
+
+            let scrollFunc = (e) => {
+                $(".projects_centerDiv").html(e.originalEvent.deltaY)
+
+                if(mHtml.is(":animated")) return;
+                if(e.originalEvent.deltaY > 0) {
+                    if(page == 6) return;
+                    page++;
+                } else if(e.originalEvent.deltaY < 0) {
+                    if(page == 1) return;
+                    page--;
+                }
+                var posTop =(page-1) * $(".projects_test").height();
+                mHtml.animate({scrollTop : posTop});
+            }
+
+            $(".projects_MainDiv").on("wheel", function(e) { scrollFunc(e) })
+            $(".projects_MainDiv").on("scroll", function(e) { scrollFunc(e) })
+            $(".projects_MainDiv").on("mousewheel", function(e) { scrollFunc(e) })
+        })
+
+        
+    </script>
+</div>

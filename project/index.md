@@ -6,5 +6,5 @@ title: 프로젝트
 ---
 
 <div class="loading-animation">
-공사중
+{%- include projects.html %}
 </div>
