@@ -1,75 +1,132 @@
 {% assign projects = site.data.main_project_detail %}
 
-<div class="projects_MainDiv" id="projects_MainDiv">
-    {% for project in projects  %}
-    <div class="projects_test">
-        <div class="projects_centerDiv">
-            {{ project.name }}
+<div class="proejcts_MainDivWarpper">
+    <div class="projects_MainDiv" id="projects_MainDiv">
+        {% for project in projects  %}
+        <div class="projects_Wrapper">
+            <div class="projects_centerDiv">
+                {{ project.name }}
+            </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    
+    <div class="projects_controller">
+        {% for project in projects %}
+        <i class="fa-solid fa-circle projects_buttons"></i>
+        {% endfor %}
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script>
+        
+        $(document).ready(function () {
+            //=======================================================================================
+            //  GET 파라미터 가져오기
+            //=======================================================================================
+            let getParam = (sname) => {
+                var params = location.search.substr(location.search.indexOf("?") + 1);
+                var sval = "";
+                params = params.split("&");
+                for (var i = 0; i < params.length; i++) {
+                    temp = params[i].split("=");
+                    if ([temp[0]] == sname) { sval = temp[1]; }
+                }
+                return sval;
+            }
+            //=======================================================================================
 
-        $(document).ready(function () { 
-            const boxList = document.querySelectorAll('.projects_test');
+    
+            //=======================================================================================
+            //  원하는 페이지로 스크롤 이동
+            //=======================================================================================
+            const controller_buttons = document.getElementsByClassName('projects_buttons')
+            let moveScroll = (page) => {
+                for(var i = 0 ; i < controller_buttons.length ; i++)
+                    controller_buttons[i].classList.remove('projects_buttons_select')
+                controller_buttons[page-1].classList.add('projects_buttons_select')
+                var posTop =(page-1) * mHtml.height();
+                mHtml.animate({scrollTop : posTop});
+            }
+            //=======================================================================================
 
+            
+            //=======================================================================================
+            //  페이드 인 아웃 효과 제어
+            //=======================================================================================
+            const boxList = document.querySelectorAll('.projects_Wrapper');
+            
             const options = {
-            root: null, // viewport
-            rootMargin: "0px",
-            threshold: 0.5,  // 50%가 viewport에 들어와 있어야 callback 실행
+                root: null, // viewport
+                rootMargin: "0px",
+                threshold: 0.5,  // 50%가 viewport에 들어와 있어야 callback 실행
             }
 
             const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.classList.add('projects_active');
-                } else {
-                entry.target.classList.remove('projects_active');
-                }
-            });
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) 
+                    entry.target.classList.add('projects_active');
+                    else entry.target.classList.remove('projects_active');
+                });
             }, options);
-
-            // 반복문을 돌려 모든 DOM에 적용
             boxList.forEach(el => observer.observe(el));
+            //=======================================================================================
             
-            let projects_MainDiv = document.getElementById('projects_MainDiv')
 
-            projects_MainDiv.addEventListener("wheel", function(e){
-                e.preventDefault();
-            },{passive : false});
+            //=======================================================================================
+            //  기본 스크롤 제어를 비활성화
+            //=======================================================================================
+            let projects_MainDiv = document.getElementById('projects_MainDiv')
             projects_MainDiv.addEventListener("scroll", function(e){
                 e.preventDefault();
             },{passive : false});
             projects_MainDiv.addEventListener("mousewheel", function(e){
                 e.preventDefault();
             },{passive : false});
-
+            //=======================================================================================
+            
+            
+            //=======================================================================================
+            //  사용자 정의 스크롤 제어 코드
+            //=======================================================================================
             var mHtml = $("#projects_MainDiv");
-            var page = 1;
-
-            mHtml.animate({scrollTop : 0},10);
-
+            var target = parseInt(getParam('target'))
+            var page = (!isNaN(target) && target >= 1 && target <= 6) ? target : 1
+            moveScroll(page)
+            
             let scrollFunc = (e) => {
-                $(".projects_centerDiv").html(e.originalEvent.deltaY)
-
                 if(mHtml.is(":animated")) return;
-                if(e.originalEvent.deltaY > 0) {
-                    if(page == 6) return;
-                    page++;
-                } else if(e.originalEvent.deltaY < 0) {
-                    if(page == 1) return;
-                    page--;
-                }
-                var posTop =(page-1) * $(".projects_test").height();
-                mHtml.animate({scrollTop : posTop});
+                var currentPosTop = mHtml.scrollTop()
+                if( currentPosTop >= (page -  0.995) * mHtml.height() )
+                    page = (page >= 6) ? 6 : page +1;
+                else if( currentPosTop <= (page - 1.005) * mHtml.height() )
+                    page = (page <= 1) ? 1 : page -1;
+                moveScroll(page)
             }
-
-            $(".projects_MainDiv").on("wheel", function(e) { scrollFunc(e) })
+            
+            let mousewheelFunc = (e) => {
+                if(mHtml.is(":animated")) return;
+                if(e.originalEvent.deltaY > 0) 
+                    page = (page == 6) ? 1 : page + 1
+                else if(e.originalEvent.deltaY < 0)
+                    page = (page == 1) ? 6 : page - 1
+                moveScroll(page)
+            }
+            
             $(".projects_MainDiv").on("scroll", function(e) { scrollFunc(e) })
-            $(".projects_MainDiv").on("mousewheel", function(e) { scrollFunc(e) })
-        })
+            $(".projects_MainDiv").on("mousewheel", function(e) { mousewheelFunc(e) })
+            //=======================================================================================
 
-        
-    </script>
+            //=======================================================================================
+            //  컨트롤 버튼을 눌렀을 때 동작
+            //=======================================================================================
+            for(let button_index = 0; button_index < controller_buttons.length; button_index++){
+                controller_buttons[button_index].addEventListener('click',() => {
+                    page = button_index + 1;
+                    moveScroll(page)
+                })
+            }
+            //=======================================================================================
+        })
+        </script>
 </div>
