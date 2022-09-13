@@ -4,7 +4,7 @@ type: tech
 date: 2022-09-13 21:25
 category: Blog
 title: Unity 한글 키보드 입력 효과
-subtitle: C# string class 키보드 한글 입력 효과 Extension
+subtitle: cs string class 키보드 한글 입력 효과 Extension
 writer: KimYC1223
 post-header: true
 image: /img/title.gif
@@ -12,10 +12,6 @@ header-img: /tech/2209132125/img/bg.png
 hash-tag: [Unity]
 draft : false
 ---
-
-# Korean Typer
-
-C# string class 키보드 한글 입력 효과 Extension
 
 - **GitHub : [KoreanTyper](https://github.com/KimYC1223/KoreanTyper/)**
 - **Release : [Github Release Page](https://github.com/KimYC1223/KoreanTyper/releases/)**
@@ -56,13 +52,13 @@ string의 각 원소를 하나씩 출력하게 된다면 한 음절씩 나타나
 
 먼저, ```KoreanTyper``` 네임 스페이스를 사용한다는 코드를 스크립트의 상단에 배치합니다.
 
-``` C#
+``` cs
 using KoreanTyper;
 ```
 
 원하는 ```string```에 ```Typing()``` 함수를 사용합니다.
 
-``` C#
+``` cs
 Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 ```
 
@@ -105,7 +101,7 @@ Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 
 ```ㅙ```, ```ㅞ```, ```ㅚ``` 와 같이 두 모음이 합쳐져 있는 경우는 2회 입력으로 간주합니다.
 
-``` C#
+``` cs
 Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 ```
 
@@ -148,7 +144,7 @@ Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 
 일정 시간마다 한 음절씩 입력되도록 구현하면 됩니다.
 
-``` C#
+``` cs
 Debug.Log("안녕하세요".Typing(9));		// 출력 결과 : 안녕하ㅅ
 ```
 
@@ -164,7 +160,7 @@ Debug.Log("안녕하세요".Typing(9));		// 출력 결과 : 안녕하ㅅ
 
 ```percent```가 ```0```보다 크고, ```1```보다 작다면 진행률에 맞는 문자열을 리턴합니다.
 
-```C#
+```cs
 Debug.Log("안녕하세요".Typing(0.845f));		// 출력 결과 : 안녕하세
 ```
 
@@ -178,7 +174,7 @@ Debug.Log("안녕하세요".Typing(0.845f));		// 출력 결과 : 안녕하세
 
 본 코드는 ```Text``` UI에 문자열을 타이핑하는 효과를 주는 아주 간단한 예제입니다.
 
-``` C#
+``` cs
 using KoreanTyper;			// Korean Typer 네임 스페이스 추가
 using UnityEngine;
 using UnityEngine.UI;
