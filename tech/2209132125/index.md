@@ -17,10 +17,8 @@ draft : false
 
 C# string class 키보드 한글 입력 효과 Extension
 
-![](https://img.shields.io/github/stars/KimYC1223/KoreanTyper)  ![](https://img.shields.io/github/forks/KimYC1223/KoreanTyper) ![](https://img.shields.io/github/issues/KimYC1223/KoreanTyper) 
-
-**GitHub : [KoreanTyper](https://github.com/KimYC1223/KoreanTyper/)**
-**Release : [Github Release Page](https://github.com/KimYC1223/KoreanTyper/releases/)**
+- **GitHub : [KoreanTyper](https://github.com/KimYC1223/KoreanTyper/)**
+- **Release : [Github Release Page](https://github.com/KimYC1223/KoreanTyper/releases/)**
 
 ---
 
@@ -44,11 +42,7 @@ string의 각 원소를 하나씩 출력하게 된다면 한 음절씩 나타나
 
 | 플랫폼 |                             버전                             |
 | :----: | :----------------------------------------------------------: |
-| Unity  | <img src="https://img.shields.io/badge/Version-2017.1.0f3 ↑-orange" align="left"> |
-
-<br>
-
-<a href="https://github.com/KimYC1223/KoreanTyper/blob/main/LICENSE"><img src="https://img.shields.io/github/license/KimYC1223/KoreanTyper"></a> <a href="mailto:kau_esc@naver.com"><img src="https://img.shields.io/badge/Contact-kau_esc@naver.com-blue?logo=gmail&logoColor=white"></a> <a href="https://KimYC1223.github.io/"><img src="https://img.shields.io/badge/blog-GitBlog-red?logo=github&logoColor=white"></a>
+| Unity  | <img src="https://img.shields.io/badge/Version-2017.1.0f3 ↑-orange"> |
 
 <br>
 
@@ -60,16 +54,15 @@ string의 각 원소를 하나씩 출력하게 된다면 한 음절씩 나타나
 
 **KoreanTyper**는 아주 간단하게 사용 할 수 있습니다.
 
-
 먼저, ```KoreanTyper``` 네임 스페이스를 사용한다는 코드를 스크립트의 상단에 배치합니다.
 
-```C#
+``` C#
 using KoreanTyper;
 ```
 
 원하는 ```string```에 ```Typing()``` 함수를 사용합니다.
 
-```
+``` C#
 Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 ```
 
@@ -112,7 +105,7 @@ Debug.Log("안녕하세요".Typing(7));		// 출력 결과 : 안녕ㅎ
 
 ```ㅙ```, ```ㅞ```, ```ㅚ``` 와 같이 두 모음이 합쳐져 있는 경우는 2회 입력으로 간주합니다.
 
-```C#
+``` C#
 Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 ```
 
@@ -129,7 +122,7 @@ Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 ```"안녕하세요"``` 라는 문자열을 예로 들면, 다음과 같습니다.
 
 |                     |   안   |   녕   |  하  |  세  |  요  |
-| ------------------: | :----: | :----: | :--: | :--: | :--: |
+| ------------------ | :----: | :----: | :--: | :--: | :--: |
 |                조합 | ㅇㅏㄴ | ㄴㅕㅇ | ㅎㅏ | ㅅㅔ | ㅇㅛ |
 |      필요 타이핑 수 |   3    |   3    |  2   |  2   |  2   |
 | 누적 필요 타이핑 수 |   3    |   6    |  8   |  10  |  12  |
@@ -155,7 +148,7 @@ Debug.Log("동해물과 백두산이".GetTypingLength());		// 출력 결과 : 22
 
 일정 시간마다 한 음절씩 입력되도록 구현하면 됩니다.
 
-```
+``` C#
 Debug.Log("안녕하세요".Typing(9));		// 출력 결과 : 안녕하ㅅ
 ```
 
@@ -185,7 +178,7 @@ Debug.Log("안녕하세요".Typing(0.845f));		// 출력 결과 : 안녕하세
 
 본 코드는 ```Text``` UI에 문자열을 타이핑하는 효과를 주는 아주 간단한 예제입니다.
 
-```C#
+``` C#
 using KoreanTyper;			// Korean Typer 네임 스페이스 추가
 using UnityEngine;
 using UnityEngine.UI;
@@ -218,7 +211,6 @@ public class KoreanTyperDemo : MonoBehaviour {
         }
     }
 }
-
 ```
 
 <br>
