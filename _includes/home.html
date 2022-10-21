@@ -56,25 +56,6 @@
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  그래픽스 <english>Graphics</english></div>
-          <div class="home_post_table_contents">
-            <table>
-              <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
-              </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'Graphics' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
-            </table>
-          </div>
-        </div>
-
-        <div class="home_post_table_category">
           <div class="home_post_table_title">  웹 프론트엔드 <english>Web</english></div>
           <div class="home_post_table_contents">
             <table>
@@ -169,6 +150,24 @@
           </div>
         </div>
 
+        <div class="home_post_table_category">
+          <div class="home_post_table_title"> 취업 <english>JobPreparation</english></div>
+          <div class="home_post_table_contents">
+            <table>
+              <tr class="home_post_table_head">
+                <td>제목</td><td>작성일</td>
+              </tr>
+              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'JobPreparation' %}
+              {% if sorted.size == 0 %}
+                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
+              {% else %}
+                {% for page in sorted limit:4 %}
+                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
+                {% endfor %}
+              {% endif %}
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   </section>

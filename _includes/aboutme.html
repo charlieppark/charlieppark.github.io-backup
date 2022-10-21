@@ -132,11 +132,10 @@
   <div class="aboutme_section">
     <div class = "aboutme_project_section">
       <div class="aboutme_section_title">메인 프로젝트</div>
-      <div class="aboutme_edu_subtitle">카드를 누르면 상세 페이지로 이동합니다.</div>
       <div class="aboutme_project_center_div">
       {% assign main_p = site.data.main_project %}
       {% for p in main_p %}
-      <a href = "{{ p.url }}">
+      
       <div class = "aboutme_project_card">
         <div class="aboutme_project_card_main">
           <div class="aboutme_project_card_img">
@@ -159,7 +158,7 @@
         <span class="aboutme_project_card_keyword">{{ k }}</span>
         {% endfor %}
         </div>
-      </div> </a>
+      </div>
       {% endfor %}
       </div>
     </div>
