@@ -25,13 +25,6 @@
         ...  {{ post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_Graphics">
-      <span>Graphics</span>
-      <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'Graphics' %}
-        ...  {{ post_a1.size }}
-      </div>
-    </div>
     <div class="side_bar_sub_list" id="side_bar_Web">
       <span>Web</span>
       <div class="side_bar_post_count">
@@ -67,12 +60,19 @@
         ...  {{ post_a1.size }}
       </div>
     </div>
+    <div class="side_bar_sub_list" id="side_bar_Graphics">
+      <span>Job Preparation</span>
+      <div class="side_bar_post_count">
+        {% assign post_a1 = sorted | where: 'hash-tag', 'JobPreparation' %}
+        ...  {{ post_a1.size }}
+      </div>
+    </div>
     <div class="side_bar_super_list" id="side_bar_life">
       소소한 이야기
     </div>
-    <div class="side_bar_super_list" id="side_bar_project">
+    <!--<div class="side_bar_super_list" id="side_bar_project">
       프로젝트
-    </div>
+    </div>-->
   </div>
 </div>
 
@@ -97,10 +97,12 @@
     location.href = "/life"
   })
 
+  /*
   side_bar_project = document.getElementById('side_bar_project')
   side_bar_project.addEventListener('click', () => {
     location.href = "/project"
   })
+  */
 
   side_bar_vrmr = document.getElementById('side_bar_vrmr')
   side_bar_vrmr.addEventListener('click', () => {
