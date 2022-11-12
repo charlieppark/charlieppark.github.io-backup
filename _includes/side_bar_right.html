@@ -60,7 +60,7 @@
         ...  {{ post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_Graphics">
+    <div class="side_bar_sub_list" id="side_bar_JobPreparation">
       <span>Job Preparation</span>
       <div class="side_bar_post_count">
         {% assign post_a1 = sorted | where: 'hash-tag', 'JobPreparation' %}
@@ -114,9 +114,9 @@
     location.href = "/tech/?tag=Unity"
   })
 
-  side_bar_Graphics = document.getElementById('side_bar_Graphics')
-  side_bar_Graphics.addEventListener('click', () => {
-    location.href = "/tech/?tag=Graphics"
+  side_bar_JobPreparation = document.getElementById('side_bar_JobPreparation')
+  side_bar_JobPreparation.addEventListener('click', () => {
+    location.href = "/tech/?tag=JobPreparation"
   })
 
   side_bar_Web = document.getElementById('side_bar_Web')
