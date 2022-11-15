@@ -26,35 +26,42 @@ layout: main
     </div>
 
     <!--draft 일 때-->
+    <div class="post-content">
 
-    {% if page.draft == true %}
-        <div class="catalogue-draft-message">
-            <h1>
-                &#x270D; Coming Soon!
-            </h1>
-            현재 열심히 글을 쓰고 있어요. 조금만 기다려주세요!
-        </div>
-    {% else %}
+        {% if page.draft == true %}
+            <div class="catalogue-draft-message">
+                <h1>
+                    &#x270D; Coming Soon!
+                </h1>
+                현재 열심히 글을 쓰고 있어요. 조금만 기다려주세요!
+            </div>
+        {% else %}
+    
+          {{ content }}
+    
+          {% if page.hash-tag %}
+          <div class="post-tags">
+              {% include post-hashtag.html %}
+          </div>
+          {% endif %}
+    
+        {% endif %}
+    </div>
 
-      {{ content }}
-
-      {% if page.hash-tag %}
-      <div class="post-tags">
-          {% include post-hashtag.html %}
-      </div>
-      {% endif %}
-
-      {% include post-footer.html %}
-
-      {% if page.layout == 'post' %}
-          <script src="https://utteranc.es/client.js"
-                  repo="KimYC1223/KimYC1223.github.io"
-                  theme="github-light"
-                  issue-term="pathname"
-                  crossorigin="anonymous"
-                  async>
-          </script>
-      {% endif %}
-
+    {% if page.draft == false %}
+    <div class="post-footer-div">
+        {% include post-footer.html %}
+    
+        {% if page.layout == 'post' %}
+            <script src="https://utteranc.es/client.js"
+                    repo="KimYC1223/KimYC1223.github.io"
+                    theme="github-light"
+                    issue-term="pathname"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+        {% endif %}
+    </div>
     {% endif %}
+
 </div>
