@@ -1,6 +1,6 @@
 # 김영찬의 개발 블로그
 
-[Git Blog Link](https://kimyc1223.github.io/)
+[🗺 Git Blog Link : https://kimyc1223.github.io](https://kimyc1223.github.io/)
 
 해당 블로그는 [GitHub Pages](https://pages.github.com/)와 [Jekyll](https://jekyllrb.com/)을 사용하여 퍼블리싱하였으며, 
 
