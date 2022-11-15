@@ -1,8 +1,14 @@
 # 김영찬의 개발 블로그
 
-해당 블로그는 [GitHub Pages](https://pages.github.com/)와 [Jekyll](https://jekyllrb.com/)을 사용하여 퍼블리싱하였으며, 마크다운 문법을 사용하여 글을 작성합니다.
+[Git Blog Link](https://kimyc1223.github.io/)
 
-해당 문서에서는 Jekyll 기반의 블로그 운영을 위한 환경구성 방법부터 마크다운 작성을 통한 블로그 포스팅 방법 등을 설명합니다.
+해당 블로그는 [GitHub Pages](https://pages.github.com/)와 [Jekyll](https://jekyllrb.com/)을 사용하여 퍼블리싱하였으며, 
+
+마크다운 문법을 사용하여 글을 작성합니다.
+
+해당 문서에서는 Jekyll 기반의 블로그 운영을 위한 환경구성 방법부터
+
+마크다운 작성을 통한 블로그 포스팅 방법 등을 설명합니다.
 
 ----
 
@@ -23,9 +29,13 @@
 
 ### 프로젝트 clone
 
-터미널에서 `git clone git@github.com:KimYC1223/KimYC1223.github.io.git` 명령어를 입력하여 프로젝트를 clone 받습니다.
+터미널에서 `git clone git@github.com:KimYC1223/KimYC1223.github.io.git` 명령어를 입력하여
 
-만약 위 명령어를 입력했을 때 git을 찾을 수 없다는 오류가 발생한다면, git 공식 사이트([Windows](https://git-scm.com/download/win), [macOS](https://git-scm.com/download/mac))에서 git을 설치한 뒤 터미널을 재실행하여 재시도해봅니다.
+프로젝트를 clone 받습니다.
+
+만약 위 명령어를 입력했을 때 git을 찾을 수 없다는 오류가 발생한다면,
+
+git 공식 사이트([Windows](https://git-scm.com/download/win), [macOS](https://git-scm.com/download/mac))에서 git을 설치한 뒤 터미널을 재실행하여 재시도해봅니다.
 
 ### Jekyll 설치
 
@@ -35,7 +45,9 @@
 
 #### Windows Jekll 설치 
 
-Jekyll on Windows 가이드 보고 기본적인 설치만 하는식으로 했는데, 가볍게 설치하거나 더 좋은 방법이 있다면 수정 부탁드립니다.
+Jekyll on Windows 가이드 보고 기본적인 설치만 하는식으로 했는데,
+
+가볍게 설치하거나 더 좋은 방법이 있다면 수정 부탁드립니다.
 
 1. [루비 공식 다운로드](https://rubyinstaller.org/downloads/)에서 **WITH DEVKIT** 2.4 버전 이상으로 다운로드 & 실행합니다.
 2. Agree - 다음 - 다음 - 설치 - 완료 후, Run 'ridk install 어쩌구' 체크박스 체크하여 Finish
@@ -72,7 +84,9 @@ $ jekyll serve 안되면 $bundle exec jekyll serve
 
 ### Typora 설치 (옵션)
 
-마크다운 제너레이터 없이도 마크다운을 잘 작성한다면 설치하지 않아도 무관하나, 우리는 도구를 사용하는 영장류이기 때문에 툴을 사용하면 좋습니다.
+마크다운 제너레이터 없이도 마크다운을 잘 작성한다면 설치하지 않아도 무관하나,
+
+우리는 도구를 사용하는 영장류이기 때문에 툴을 사용하면 좋습니다.
 
 [Typora](https://typora.io/) 공식 사이트에 접속하여 프로그램을 설치합니다.
 
