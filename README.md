@@ -1,3 +1,5 @@
+![Logo](https://github.com/KimYC1223/KimYC1223.github.io/blob/master/meta/android-icon-144x144.png?raw=true)
+
 # 김영찬의 개발 블로그
 
 [🗺 Git Blog Link : https://kimyc1223.github.io](https://kimyc1223.github.io/)
