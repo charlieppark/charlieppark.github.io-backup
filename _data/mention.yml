@@ -1,4 +1,71 @@
 - writer: KimYC1223
+  date: 2022-12-19 18:00
+  title : 안녕 반가워요 NHN
+  message: NHN에서 새로운 나의 커리어를 시작해보고자 한다!<br>아직 정말 부족한 것도 많고, 모르는것 투성이지만, 잘 해내보고 싶다.<br>같이 일할 팀원 분들도 너무나 좋은 분들만 있는것 같다.<br>앞으로의 회사 생활이 기대가 된다!
+  emoji : ✨
+  media:
+    - type: photo
+      name: 2022121901
+    - type: photo
+      name: 2022121902
+
+- writer: KimYC1223
+  date: 2022-11-30 18:00
+  title : 안녕 잘있어요 KETI
+  message: 2018년부터 함께 해왔던 KETI를 떠나간다.<br>너무나도 많이 부족했던 나에게 정말 많은 기회를 주었던 KETI. 정말 너무 많은 감정이 들지만, 새로운 시작을 위해 떠난다!<br>이상엽 책임님, 조인표 선임님, 이재규 선임님께 항상 감사한 마음이 든다..!<br>마지막엔 후배 지원이가 너무나 고맙게도 작별의 케이크를 전달해주었다...!
+  emoji : 🧑‍🎓
+  media:
+    - type: photo
+      name: 2022113001
+    - type: photo
+      name: 2022113002
+    - type: photo
+      name: 2022113003
+
+- writer: KimYC1223
+  date: 2022-11-12 18:00
+  title : 강릉 가보자고
+  message: 선경이와 함께 차로 운전해서 강릉여행을 갔다왔다!<br>이렇게 장거리를 크게 운전해본건 처음이어서 힘들었는데, 멋진 바다와 맛있는 밥들을 먹으니 금방 기분이 좋아졌다 ㅎㅎ<br>사진을 더 많이 찍었어야 했다... 다음에 또 가야지
+  emoji : 🏖
+  media:
+    - type: photo
+      name: 2022111201
+    - type: photo
+      name: 2022111202
+    - type: photo
+      name: 2022111203
+    - type: photo
+      name: 2022111205
+    - type: photo
+      name: 2022111206
+
+- writer: KimYC1223
+  date: 2022-08-19 18:00
+  title : 선경이와 함께하는 100일 파티
+  message: 선경이와 만난지도 벌써 100일이나 되었다!<br>100일 기념으로 무얼할까 고민하다가 성남에 있는 오마카세인 스시다케루를 예약하고 근사한 저녁을 보냈다.<br><a  class="hyperlink" href="https://naver.me/FlzB29zi">스시다케루</a>는 정말 훌륭한 맛이었다... 특히 고등어초밥이 미쳤다<br>선경이가 100일 케이크 선물해준것도 자랑!
+  emoji : ❤️
+  media:
+    - type: photo
+      name: 2022081901
+    - type: photo
+      name: 2022081902
+    - type: photo
+      name: 2022081903
+    - type: photo
+      name: 2022081904
+    - type: photo
+      name: 2022081906
+
+- writer: KimYC1223
+  date: 2022-07-03 18:00
+  title : 제 1회 고학력자 모임
+  message: 석사 과정을 모두 마치고 졸업한 승현이와 경찬이를 만났다!<br>못다한 이야기도 나누며, 진짜 밤 새도록 즐거운 시간을 보냈다.<br>Pandemic 보드게임을 했는데, 정말 손에 땀을 쥐도록 플레이했다ㅋㅋㅋ<br>마지막은 카드 1장을 남기고 지구를 구한 기념사진
+  emoji : 👾
+  media:
+    - type: photo
+      name: 2022070301
+
+- writer: KimYC1223
   date: 2022-06-25 18:00
   title : DC Lab 제 1회 홈커밍
   message: 연세대학교 디펜더블컴퓨팅 랩실에서 주최한 제 1회 홈커밍!<br>졸업한 선배님들과 재학생분들, 교수님과 함께했던 시간...!<br>마지막엔 교수님이 티 세트를 선물로 주셨다!
@@ -40,7 +107,7 @@
 - writer: KimYC1223
   date: 2022-06-05 17:49
   title : 호캉스 with 수영장
-  message: 선경이와 함께 한 동대문 호캉스 투어!<br>처음으로 가본 수영장있는 호텔이었는데, 너무 재밌어서 깜짝놀랐다.<br>다들 사진찍기 바쁜데 우리만 찐으로 놀았던것 같다...ㅎㅎ<br>우육미 스테이크와 된장밥도 기억에 남는다!
+  message: 선경이와 함께 한 동대문 호캉스 투어!<br>처음으로 가본 수영장있는 호텔이었는데, 너무 재밌어서 깜짝놀랐다.<br>다들 사진찍기 바쁜데 우리만 찐으로 놀았던것 같다...ㅎㅎ<br><a class="hyperlink" href="https://naver.me/FWPWHUpn">우육미</a> 스테이크와 된장밥도 기억에 남는다!
   emoji : 🏨
   media:
     - type: photo
