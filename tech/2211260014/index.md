@@ -126,7 +126,7 @@ AWS의 웹 대시보드 중 ```Billing```페이지에 가 보면 자세한 청�
 
 | English | 한국어 |
 |:--------|:-----|
-| Dear, sir or madam. <br><br>Today AWS forwarded me with a charge of 37,804,640 KRW. I was so surprised to see such an astronomical amount. Because I am only using AWS for personal purposes.<br><br>When I checked the EC2 dashboard, I saw that the instance with ID "i-0f9826cc21b46142e" was set to p3.16xlarge. I think someone hacked my account and did this.<br><br>So I'm sorry, but can I delete this instance and get a refund? I can't afford to pay that amount...<Br><br>p.s.<br>Additionally, since I'm not good at English, is it possible to reply in Korean if possible? If that's not possible, It's okay to reply me in english.<br><br>Thank you.<br><br>Best regards,<br>Young Chan Kim | 안녕하세요.<br><br>오늘 AWS에서 제게 37,804,640원의 요금을 청구했습니다. 저는 개인적인 용도로만 AWS를 사용하고 있기 때문에, 천문학적인 금액을 보고 너무 놀랐습니다.<br><br>EC2 대시보드를 확인해보니 ID가 "i-0f9826cc21b46142e"인 인스턴스가 p3.16xlarge로 설정되어 있는 것을 확인했는데, 누군가 내 계정을 해킹하여 이런 짓을 한 것 같습니다.<br><br>죄송하지만 이 인스턴스를 삭제하고 환불받을 수 있나요? 저는 그 금액을 감당할 수 없습니다...<br><br>추신.<br>추가로 제가 영어를 잘 못하는데 가능하면 한국어로 답장해도 될까요? 가능하지 않다면 영어로 답장주셔도 괜찮습니다.<br><br>감사합니다.<br><br>친애하는,<br>김영찬<br> |
+| Dear, sir or madam. <br><br>Today AWS forwarded me with a charge of 37,804,640 KRW. I was so surprised to see such an astronomical amount. Because I am only using AWS for personal purposes.<br><br>When I checked the EC2 dashboard, I saw that the instance with ID "i-0f9826cc21b46142e" was set to p3.16xlarge. I think someone hacked my account and did this.<br><br>So I'm sorry, but can I delete this instance and get a refund? I can't afford to pay that amount...<Br><br>p.s.<br>Additionally, since I'm not good at English, is it possible to reply in Korean if possible? If that's not possible, It's okay to reply me in english.<br><br>Thank you.<br><br>Best regards,<br>Young Chan Kim | 안녕하세요.<br><br>오늘 AWS에서 제게 37,804,640원의 요금을 청구했습니다. 저는 개인적인 용도로만 AWS를 사용하고 있기 때문에, 천문학적인 금액을 보고 너무 놀랐습니다.<br><br>EC2 대시보드를 확인해보니 ID가 "i-0f9826cc21b46142e"인 인스턴스가 p3.16xlarge로 설정되어 있는 것을 확인했는데, 누군가 내 계정을 해킹하여 이런 짓을 한 것 같습니다.<br><br>죄송하지만 이 인스턴스를 삭제하고 환불받을 수 있을까요? 저는 그 금액을 감당할 수 없습니다...<br><br>추신.<br>추가로 제가 영어를 잘 못하는데 가능하면 한국어로 답장해도 될까요? 가능하지 않다면 영어로 답장주셔도 괜찮습니다.<br><br>감사합니다.<br><br>친애하는,<br>김영찬<br> |
 
 이때, 답변을 어떤 방식으로 선택할 수 있는지 고를 수 있는데, 꼭 웹 채팅방식을 선택하길 바란다.
 
@@ -152,7 +152,9 @@ AWS의 웹 대시보드 중 ```Billing```페이지에 가 보면 자세한 청�
 <br>
 그쪽도 못알아 듣는 상황이 왔다.<br>
 <br>
-너무 말이 안통해 대화가 되질 않자 새벽에 이게 뭐하는 짓인가 싶어, 전화기로 "하... ㅅㅂ 뭐라는거야 진짜"라고 한국어로 중얼거렸더니<br>
+너무 말이 안통해 대화가 되질 않자 새벽에 이게 뭐하는 짓인가 싶어,<br>
+<br>
+전화기로 "하... ㅅㅂ 뭐라는거야 진짜"라고 한국어로 중얼거렸더니<br>
 <br>
 놀랍게도 거기서 상담원이 "Oh, I See, I see" 라고 하며 웹 채팅 상담으로 변경해주었다.<br>
 <br>
@@ -162,6 +164,101 @@ AWS의 웹 대시보드 중 ```Billing```페이지에 가 보면 자세한 청�
 </details>
 
 <br><br>
+
+나의 경우, 다음과 같은 연락을 받았다.
+
+```text
+안녕하세요 아마존웹서비스입니다,
+
+연락주셔서 감사합니다.
+
+고객님의 문의에 따라 본 케이스를 한국어 고객지원팀으로 이관 도와드리겠으며,
+
+해당 팀에서 케이스를 확인한 후 한국어로 자세하게 안내 드릴 예정입니다.
+
+해당 팀에 먼저 접수된 문의량이 많은 경우 답변을 드리는 데까지 다소 시일이
+
+소요될 수 있는 점에 대해 미리 양해 부탁 드리도록 하겠습니다.
+
+한국어 지원 업무 시간: 평일 오전 9시 - 오후 6시
+
+휴무: 주말 및 공휴일
+
+감사합니다.
+```
+
+반가운 한국어를 뒤로 하고, 일단 더 큰 피해가 생기는 것을 막기 위해
+
+문제가 있는 인스턴스는 ```중지```처리하였다.
+
+초조한 마음으로 며칠을 기다리자, 다음과 같은 답변이 왔다.
+
+![고객 센터 답변](./img/img_8.png)
+
+내용이 길어 요약하면, 다음과 같다.
+
+```text
+해킹당했다는 너의 주장은 잘 알겠어
+
+일단 내부적으로 정말 너가 한 짓인지, 아닌지 알아보고 연락줄게.
+
+근데 혹시 너도 정말 네 게정이 털렸는지 궁금하니?
+
+아래에 너 계정의 활동 로그를 볼 수 있는 방법들을 소개해줄게 확인해보렴
+```
+
+... 그냥 기다리라는 소리였다.
+
+다만, 중간에 중요한 문장이 하나 잇었는데,
+
+```
+현재 말씀해 주셨던 인스턴스는 중단된 것으로 확인되나 원치 않는 과금을 막기 위해,  종료시키는 것을 추천드리겠습니다. 
+
+만약 인스턴스를 종료시키지 않을 경우 관련 리소스에서 추가 비용이 발생할 수 있기 때문입니다.
+```
+
+그랬다. 추가적인 피해를 막기 위해 잘못된 인스턴스를 ```중지```시켰으나,
+
+중지가 아닌 ```종료```를 해야했던 것이었다!
+
+![중지와 종료](./img/img_9.png)
+
+이것 때문에 추가 금액이 또 발생하고 말았다.
+
+(하지만 최종적으로는 AWS에서 이 금액까지도 모두 없애주었다.)
+
+무튼, 일단 추가적인 피해를 막았고,
+
+AWS에서 말한 **내부적인 검토**가 끝나길 기다렸다.
+
+<br>
+
+---
+
+## 보안은 철저히
+
+내부적 검토를 기다리는 와중에, 추가적인 피해를 막기 위해
+
+계정의 보안을 강화하는 작업을 진행해야 했다.
+
+(이 과정에서는 다시 영어로 메일이 왔다)
+
+![AWS에서 온 Action required 메일](./img/img_10.png)
+
+<span style="color:red;font-weight:bold;">만약, 당신이 메일중 [ACTION REQUIRED] 이라는 메일을 받으면,</span>
+
+당신이 무언가 해야 할 일이 있다는 뜻이므로, 반드시 메일을 잘 읽고 그 지시에 따라야 한다.
+
+예를 들어, 바로 위에 있는 사진에서는 계정이 손상된 것 같으니,
+
+비밀번호를 바꾸고 [Cloud tail](https://doitnow-man.tistory.com/entry/AWS-Cloudtail-%EA%B3%BC-CloudWatch-%EB%B9%84%EA%B5%90)에서 이상한 활동 기록이 있는지 확인하라는 것이었다.
+
+이 메일에 대해 나는 다음과 같이 답신했다.
+
+| English | 한국어 |
+|:---|:---|
+|Dear, sir or madam.<br><br>Thank you so much for your quick response despite your busy schedule.<br><Br>I have completed steps 1, 2, and 3.<br>I found out that MFA was enabled on October 4, 2022 at 3:00 AM (UTC+9), but I requested through the AWS service center to turn it off on October 6th.<br>And the current problematic instance has been terminated.<Br><br>Please feel free to contact me if there is anything I need to do.<br><br>Best regards,<br>Young Chan Kim. | 안녕하세요<br><Br>바쁘신 와중에도 빠른 답변 감사드립니다.<br><br>1, 2, 3단계를 완료했습니다.<br>2022년 10월 4일 오전 3시(UTC+9)에 MFA가 활성화된 것을 알았으나 AWS 서비스 센터를 통해 10월 6일에 해제를 요청했습니다.<br>그리고 현재 문제가 있는 인스턴스가 종료되었습니다.<br><Br>제가 해야 할 일이 있으면 언제든지 연락주세요.<br><br>친애하는,<br>김영찬 |
+
 
 ---
 
