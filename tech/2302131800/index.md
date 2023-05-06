@@ -9,7 +9,7 @@ writer: charlieppark
 post-header: true
 image: /img/title.png
 header-img: /tech/2302131800/img/bg.png
-hash-tag: [Others, Ubuntu, LVM, Server]
+hash-tag: [Software, Ubuntu, LVM, Server]
 draft: false
 ---
 
@@ -17,7 +17,7 @@ draft: false
 
 아마 1년 정도 전, 서버를 세팅하며 lvm을 손대려다 파티션을 건드려 데이터를 다 날리고 포맷했더랬다..
 
-아직도 그 생각을 하면 가슴이 끔찍한 것이, 백송골을 쳐다보고 두엄에 자빠진 두꺼비나 다름이 없다.
+~~아직도 그 생각을 하면 가슴이 끔찍한 것이, 백송골을 쳐다보고 두엄에 자빠진 두꺼비나 다름이 없다.~~
 
 이번 서버 세팅에도 왜인지 모르겠으나 굳이 lvm으로 세팅을 해서, SSD의 용량인 1TB 중 100GB 밖에 사용하지 않고 있었다.
 
