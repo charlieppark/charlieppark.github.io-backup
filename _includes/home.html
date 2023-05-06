@@ -1,175 +1,323 @@
 <div class="loading-animation">
   <section class="home">
     <div class="section">
-      <span class="title"><span class="label-emoji">✍️</span>&nbsp;최근 게시물</span>
+      <span class="title"
+        ><span class="label-emoji">✍️</span>&nbsp;최근 게시물</span
+      >
       <div class="content">
         <table class="catalogue">
           <tr>
-            {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' %}
-            {% for page in sorted limit:4 %}
-            {% include post-card.html %}
-            {% endfor %}
+            {% assign sorted = site.pages | sort: 'date' | reverse | where:
+            'type', 'tech' %} {% for page in sorted limit:4 %} {% include
+            post-card.html %} {% endfor %}
           </tr>
         </table>
       </div>
     </div>
 
     <div class="section">
-      <span class="title"><span class="label-emoji">📚</span>&nbsp;메인 카테고리 게시물</span>
+      <span class="title"
+        ><span class="label-emoji">📚</span>&nbsp;메인 카테고리 게시물</span
+      >
       <div class="home_post_table">
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  증강 현실 <english>Mixed Reality</english></div>
+          <div class="home_post_table_title">
+            컴퓨터 비전 <english>Computer Vision</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'MixedReality' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'ComputerVision' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  유니티 <english>Unity</english></div>
+          <div class="home_post_table_title">
+            컴퓨터 그래픽스 <english>Computer Graphics</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'Unity' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'ComputerGraphics' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  웹 CSS / JS <english>Web</english></div>
+          <div class="home_post_table_title">
+            머신러닝 <english>Machine Learning</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'Web' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'MachineLearning' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title"> 파이썬 <english>Python</english></div>
+          <div class="home_post_table_title">
+            소프트웨어 <english>Software</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'Python' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Software' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  인공 지능 <english>Arificial Intelligence</english></div>
+          <div class="home_post_table_title">
+            수학 <english>Mathematics</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'AI' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Mathematics' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  토이 프로젝트 <english>ToyProject</english></div>
+          <div class="home_post_table_title">
+            토이 프로젝트 <english>Toy Project</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'ToyProject' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-              {% for page in sorted limit:4 %}
-              <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-              {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'ToyProject' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title">  알고리즘 <english>Algorithm</english></div>
+          <div class="home_post_table_title">
+            알고리즘 <english>Algorithm</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'Algorithm' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-              {% for page in sorted limit:4 %}
-              <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-              {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Algorithm' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
 
         <div class="home_post_table_category">
-          <div class="home_post_table_title"> 취업 <english>JobPreparation</english></div>
+          <div class="home_post_table_title">
+            생각들 <english>Thoughts</english>
+          </div>
           <div class="home_post_table_contents">
             <table>
               <tr class="home_post_table_head">
-                <td>제목</td><td>작성일</td>
+                <td>제목</td>
+                <td>작성일</td>
               </tr>
-              {% assign sorted = site.pages | sort: 'date' | reverse | where: 'type', 'tech' | where: 'hash-tag', 'JobPreparation' %}
-              {% if sorted.size == 0 %}
-                  <td colspan="2" rowspan="4"><span class="home_post_table_no_post">글 없음</span></td>
-              {% else %}
-                {% for page in sorted limit:4 %}
-                <tr> <td><a href="{{ page.url | prepend: site.baseurl }}">{{page.title}}</a></td><td>{{page.date | date: "%Y-%m-%d"}}</td> </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Thoughts' %} {% if
+              sorted.size == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
+            </table>
+          </div>
+        </div>
+
+        <div class="home_post_table_category">
+          <div class="home_post_table_title">
+            이외 <english>Others</english>
+          </div>
+          <div class="home_post_table_contents">
+            <table>
+              <tr class="home_post_table_head">
+                <td>제목</td>
+                <td>작성일</td>
+              </tr>
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Others' %} {% if sorted.size
+              == 0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
+            </table>
+          </div>
+        </div>
+
+        <div class="home_post_table_category">
+          <div class="home_post_table_title">기록 <english>Logs</english></div>
+          <div class="home_post_table_contents">
+            <table>
+              <tr class="home_post_table_head">
+                <td>제목</td>
+                <td>작성일</td>
+              </tr>
+              {% assign sorted = site.pages | sort: 'date' | reverse | where:
+              'type', 'tech' | where: 'hash-tag', 'Logs' %} {% if sorted.size ==
+              0 %}
+              <td colspan="2" rowspan="4">
+                <span class="home_post_table_no_post">글 없음</span>
+              </td>
+              {% else %} {% for page in sorted limit:4 %}
+              <tr>
+                <td>
+                  <a href="{{ page.url | prepend: site.baseurl }}"
+                    >{{page.title}}</a
+                  >
+                </td>
+                <td>{{page.date | date: "%Y-%m-%d"}}</td>
+              </tr>
+              {% endfor %} {% endif %}
             </table>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 </div>

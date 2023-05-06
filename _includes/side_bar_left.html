@@ -1,79 +1,54 @@
 {% assign writer = site.data.members | where: 'id', KimYC1223 | first %}
 <div class="side_bar_left">
-  <div class='side_bar_thumbnail' >
+  <div class="side_bar_thumbnail">
+    <img
+      class="side_bar_profileImage"
+      id="side_bar_MyThumbnail"
+      src="https://raw.githubusercontent.com/charlieppark/charlieppark/master/profile_image.jpg"
+    />
+    <script>
+      thumbnail = document.getElementById("side_bar_MyThumbnail");
+      thumbnail.addEventListener("click", () => {
+        location.href = "https://github.com/charlieppark";
+      });
+    </script>
+    <div class="side_bar_emoji">
+      <span>{{writer.emoji}}</span>
+    </div>
+    <div class="side_bar_nickname">charlieppark</div>
+    <div class="side_bar_name">박찬호</div>
+    <div class="side_bar_work_en">
+      Dankook University C&I Lab <br />Undergraduate Intern
+    </div>
+    <div class="side_bar_work_kr">
+      단국대학교 모바일시스템공학과 C&I Lab<br />
+      학부연구생
+    </div>
+    <div class="side_bar_button" id="side_bar_enmail_1">
+      <i class="far fa-envelope"></i> <span>chanho.park@dankook.ac.kr</span>
+    </div>
+    <div class="side_bar_button" id="side_bar_enmail_2">
+      <i class="far fa-envelope"></i> <span>chanho0309@gmail.com</span>
+    </div>
+    <div class="side_bar_button" id="side_bar_github">
+      <i class="fab fa-github-alt"></i> <span>GitHub Profile</span>
+    </div>
 
-    <img class='side_bar_profileImage' id="side_bar_MyThumbnail" src='https://avatars.githubusercontent.com/u/40852277'/>
-      <script>
-        thumbnail = document.getElementById('side_bar_MyThumbnail')
-        thumbnail.addEventListener('click', () => {
-          location.href = "https://github.com/KimYC1223"
-        })
-      </script>
-      <div class='side_bar_emoji'>
-        <span>{{writer.emoji}}</span>
-      </div>
-      <div class="side_bar_nickname">
-        KimYC1223
-      </div>
-      <div class="side_bar_name">
-        김영찬
-      </div>
-      <div class="side_bar_work_en">
-        NHN <br>Team Game Platform Client
-      </div>
-      <div class="side_bar_work_kr">
-        NHN<br /> 게임플랫폼클라팀
-      </div>
-      <div class="side_bar_button" id="side_bar_enmail_1">
-        <i class="far fa-envelope"></i> <span>kau_esc@naver.com</span>
-      </div>
-      <div class="side_bar_button" id="side_bar_enmail_2">
-        <i class="far fa-envelope"></i> <span>kimyc1223@keti.re.kr</span>
-      </div>
-      <div class="side_bar_button" id="side_bar_github">
-        <i class="fab fa-github-alt"></i> <span>GitHub Profile</span>
-      </div>
-      <div class="side_bar_button" id="side_bar_assetstore">
-        <i class="fa-brands fa-unity"></i><span>Unity publisher profile</span>
-      </div>
-      <div class="side_bar_button" id="side_bar_steam">
-        <i class="fab fa-steam-symbol"></i> <span>Steam Profile</span>
-      </div>
-      <div class="side_bar_button" id="side_bar_facebook">
-        <i class="fab fa-facebook-square"></i> <span>Facebook</span>
-      </div>
+    <script>
+      side_bar_enmail_1 = document.getElementById("side_bar_enmail_1");
+      side_bar_enmail_1.addEventListener("click", () => {
+        location.href = "mailto:chanho.park@dankook.ac.kr";
+      });
 
-      <script>
-        side_bar_enmail_1 = document.getElementById('side_bar_enmail_1')
-        side_bar_enmail_1.addEventListener('click', () => {
-          location.href = "mailto:kau_esc@naver.com"
-        })
+      side_bar_enmail_2 = document.getElementById("side_bar_enmail_2");
+      side_bar_enmail_2.addEventListener("click", () => {
+        location.href = "mailto:chanho0309@gmail.com";
+      });
 
-        side_bar_enmail_2 = document.getElementById('side_bar_enmail_2')
-        side_bar_enmail_2.addEventListener('click', () => {
-          location.href = "mailto:kimyc1223@keti.re.kr"
-        })
-
-        side_bar_github = document.getElementById('side_bar_github')
-        side_bar_github.addEventListener('click', () => {
-          location.href = "https://github.com/KimYC1223"
-        })
-
-        side_bar_steam = document.getElementById('side_bar_steam')
-        side_bar_steam.addEventListener('click', () => {
-          location.href = "https://steamcommunity.com/id/kimyc1223?l=korean"
-        })
-
-        side_bar_facebook = document.getElementById('side_bar_facebook')
-        side_bar_facebook.addEventListener('click', () => {
-          location.href = "https://www.facebook.com/profile.php?id=100000498178589"
-        })
-
-        side_bar_assetstore = document.getElementById('side_bar_assetstore')
-        side_bar_assetstore.addEventListener('click', () => {
-          location.href = "https://assetstore.unity.com/publishers/73611"
-        })
-
-      </script>
+      side_bar_github = document.getElementById("side_bar_github");
+      side_bar_github.addEventListener("click", () => {
+        location.href = "https://github.com/charlieppark";
+      });
+    </script>
   </div>
 </div>

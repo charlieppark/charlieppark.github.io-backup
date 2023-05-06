@@ -1,10 +1,13 @@
 /*=======================================================================================
   최상단 파트
 =======================================================================================*/
-img {padding:0; margin: 0;}
+img {
+  padding: 0;
+  margin: 0;
+}
 
-.aboutme{
-  font-family: 'Noto Sans KR';
+.aboutme {
+  font-family: "Noto Sans KR";
   font-weight: 400;
 }
 
@@ -21,10 +24,10 @@ img {padding:0; margin: 0;}
 .aboutme_title_en {
   font-size: 30px;
   margin-left: 30px;
-  color:$primary;
+  color: $primary;
   opacity: 0.5;
 
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     font-size: 18px;
     display: block;
     margin: 0;
@@ -38,13 +41,13 @@ img {padding:0; margin: 0;}
   margin-top: 10px;
   margin-right: 20px;
 
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     width: 165px;
     height: 165px;
     margin-right: 30px;
   }
 
-  @media (min-width:$break-large) {
+  @media (min-width: $break-large) {
     display: none;
   }
 }
@@ -55,15 +58,15 @@ img {padding:0; margin: 0;}
   opacity: 0.7;
   margin-bottom: 20px;
 
-  @media (max-width:$break-large) {
+  @media (max-width: $break-large) {
     margin-bottom: 45px;
   }
 
-  @media (max-width:$break-small) {
+  @media (max-width: $break-small) {
     font-size: 20px;
   }
 
-  @media (max-width:490px) {
+  @media (max-width: 490px) {
     margin-bottom: 40px;
     font-size: 15px;
   }
@@ -85,7 +88,7 @@ img {padding:0; margin: 0;}
 }
 
 .aboutme_greeting {
-  color:$grey-8;
+  color: $grey-8;
   line-height: 25px;
   padding-top: -10px;
 }
@@ -103,16 +106,12 @@ img {padding:0; margin: 0;}
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color:$grey-0;
+  color: $grey-0;
 }
 
 .aboutme_greeting_subtitle span {
   margin-right: 10px;
 }
-
-
-
-
 
 /*=======================================================================================
   자기 소개 파트
@@ -122,7 +121,7 @@ img {padding:0; margin: 0;}
   display: inline-block;
   margin-left: 3px;
   margin-bottom: 10px;
-  color:white;
+  color: white;
   cursor: pointer;
   opacity: 0.7;
   transition: 0.3s;
@@ -133,8 +132,8 @@ img {padding:0; margin: 0;}
 }
 
 .text_badge_head {
-  padding:0px 10px;
-  background: linear-gradient(180deg,rgb(84, 84, 84),rgb(60, 60, 60));
+  padding: 0px 10px;
+  background: linear-gradient(180deg, rgb(84, 84, 84), rgb(60, 60, 60));
   background-color: white;
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
@@ -143,22 +142,22 @@ img {padding:0; margin: 0;}
   font-size: 17px;
   line-height: 25px;
   height: 25px;
-  float:left;
+  float: left;
 }
 
 .text_badge_content {
-  padding:0px 10px;
-  background: linear-gradient(180deg,$primary,$primary-dark);
-  color:white;
+  padding: 0px 10px;
+  background: linear-gradient(180deg, $primary, $primary-dark);
+  color: white;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   line-height: 25px;
   display: inline-block;
   height: 25px;
-  float:none;
+  float: none;
 }
 
-.aboutme_section_title{
+.aboutme_section_title {
   padding-left: 20px;
   font-size: 24px;
   border-left: 7px solid $primary-dark;
@@ -169,13 +168,19 @@ img {padding:0; margin: 0;}
 }
 
 .aboutme_introduce_section li {
-  background: linear-gradient(90deg, rgb(240, 240, 240),rgb(240, 240, 240),#d4c9f0, #d4c9f0);
+  background: linear-gradient(
+    90deg,
+    rgb(240, 240, 240),
+    rgb(240, 240, 240),
+    #d4c9f0,
+    #d4c9f0
+  );
   background-size: 300%;
   border-radius: 5px;
   margin-bottom: 5px;
-  padding : 0px 20px;
+  padding: 0px 20px;
   transition: 0.6s;
-  cursor:default;
+  cursor: default;
 }
 
 .aboutme_introduce_section td {
@@ -187,19 +192,21 @@ img {padding:0; margin: 0;}
 .aboutme_introduce_section li:hover {
   background-position: right;
 
-  td { color:$primary-dark; }
+  td {
+    color: $primary-dark;
+  }
 }
 
 .aboutme_introduce_section i {
   font-size: 20px;
   margin-right: 10px;
-  color:$primary-dark;
+  color: $primary-dark;
   height: 40px;
   line-height: 40px;
-  float : left;
+  float: left;
 }
 
-@media (max-width:$break-small) {
+@media (max-width: $break-small) {
   .aboutme_introduce_section td {
     line-height: 25px;
   }
@@ -214,13 +221,9 @@ img {padding:0; margin: 0;}
   float: none;
 }
 
-
-
-
 /*=======================================================================================
   학력 및 경력 사항 파트
 =======================================================================================*/
-
 
 .aboutme_edu_table {
   width: 100%;
@@ -245,7 +248,7 @@ img {padding:0; margin: 0;}
   font-weight: 500;
 }
 
-@media (max-width:$break-small) {
+@media (max-width: $break-small) {
   .aboutme_edu_table_extra {
     display: none;
   }
@@ -254,13 +257,9 @@ img {padding:0; margin: 0;}
 .aboutme_edu_subtitle {
   font-size: 17px;
   font-weight: 400;
-  color:rgb(163, 163, 163);
+  color: rgb(163, 163, 163);
   margin-bottom: 10px;
 }
-
-
-
-
 
 /*=======================================================================================
   기술 스택 파트
@@ -278,14 +277,14 @@ img {padding:0; margin: 0;}
   display: inline-block;
   text-align: center;
   @media (max-width: $break-small) {
-    width:23.5%;
+    width: 23.5%;
   }
 }
 
 .aboutme_stack_cards img {
   transition: 0.2s;
-  transform:scale(0.9);
-  cursor:zoom-in;
+  transform: scale(0.9);
+  cursor: zoom-in;
 }
 
 .aboutme_badge_desc {
@@ -293,12 +292,12 @@ img {padding:0; margin: 0;}
   z-index: 30;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.79);
-  color:white;
-  transform: translate(-50%,-50%);
+  color: white;
+  transform: translate(-50%, -50%);
   position: absolute;
   width: 550px;
-  top:-15px;
-  left:50%;
+  top: -15px;
+  left: 50%;
   transition: 0.3s;
   opacity: 0;
   text-align: left;
@@ -306,52 +305,56 @@ img {padding:0; margin: 0;}
 }
 
 .HL {
-  color:$yellow;
+  color: $yellow;
 }
 
 .aboutme_stack_cards:hover {
   img {
-    transform:scale(1.0);
+    transform: scale(1);
   }
 
   .aboutme_badge_desc {
     display: block;
     opacity: 1;
-    top:-30px;
+    top: -30px;
   }
 
-  @media (max-width : $break-small) {
-    .badge-left, .badge-right, .badge-left2, .badge-right2,
-    .badge-center1, .badge-center2  {
+  @media (max-width: $break-small) {
+    .badge-left,
+    .badge-right,
+    .badge-left2,
+    .badge-right2,
+    .badge-center1,
+    .badge-center2 {
       width: 100vw;
-      transform: translate(-50%,0%);
+      transform: translate(-50%, 0%);
       position: fixed;
-      top:auto !important;
-      bottom:0px !important;
+      top: auto !important;
+      bottom: 0px !important;
     }
   }
 }
 
 .badge-left {
-  transform: translate(0%,-50%);
+  transform: translate(0%, -50%);
 }
 
 .badge-right {
-  transform: translate(-100%,-50%);
+  transform: translate(-100%, -50%);
 }
 
 .badge-left2 {
-  transform: translate(-25%,-50%);
+  transform: translate(-25%, -50%);
 }
 
 .badge-right2 {
-  transform: translate(-75%,-50%);
+  transform: translate(-75%, -50%);
 }
 
-.badge-center1, .badge-center2 {
-  transform: translate(-50%,-50%);
+.badge-center1,
+.badge-center2 {
+  transform: translate(-50%, -50%);
 }
-
 
 /*=======================================================================================
   메인 프로젝트 파트
@@ -359,7 +362,8 @@ img {padding:0; margin: 0;}
 
 .aboutme_project_center_div {
   margin-top: 30px;
-  text-align: center; align-items: center;
+  text-align: center;
+  align-items: center;
 }
 
 .aboutme_project_card {
@@ -375,28 +379,52 @@ img {padding:0; margin: 0;}
   overflow: hidden;
   height: 410px;
 
-  @media (min-width: 1920px) {min-height: 410px;}
-  @media (max-width: 1630px) {width: calc(50% - 10px); height: 440px;}
-  @media (max-width: 1436px) {width: calc(50% - 10px); height: 403px;}
-  @media (max-width: 1200px) {width: calc(50% - 10px); height: 460px;}
-  @media (max-width: 970px) {width: calc(50% - 10px); height: 410px;}
-  @media (max-width: 560px) {width: calc(50% - 10px); height: 420px;}
-  @media (max-width: 485px) { height: 420px; width: 100%; margin-left:0px; margin-bottom: 20px;}
+  @media (min-width: 1920px) {
+    min-height: 410px;
+  }
+  @media (max-width: 1630px) {
+    width: calc(50% - 10px);
+    height: 440px;
+  }
+  @media (max-width: 1436px) {
+    width: calc(50% - 10px);
+    height: 403px;
+  }
+  @media (max-width: 1200px) {
+    width: calc(50% - 10px);
+    height: 460px;
+  }
+  @media (max-width: 970px) {
+    width: calc(50% - 10px);
+    height: 410px;
+  }
+  @media (max-width: 560px) {
+    width: calc(50% - 10px);
+    height: 420px;
+  }
+  @media (max-width: 485px) {
+    height: 420px;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 .aboutme_project_card:hover {
   .aboutme_project_card_main
-  .aboutme_project_card_img
-  .aboutme_proejct_card_real_img {
+    .aboutme_project_card_img
+    .aboutme_proejct_card_real_img {
     transform: scale(1.2);
   }
 
   .aboutme_project_card_main
-  .aboutme_project_card_img
-  .aboutme_project_card_img_dark {
+    .aboutme_project_card_img
+    .aboutme_project_card_img_dark {
     opacity: 0.2;
 
-    @media (max-width: 1200px) { opacity: 0; }
+    @media (max-width: 1200px) {
+      opacity: 0;
+    }
   }
 }
 
@@ -408,7 +436,9 @@ img {padding:0; margin: 0;}
   z-index: 2;
   background: #000000;
   opacity: 0.6;
-  @media (max-width: 1200px) { opacity: 0; }
+  @media (max-width: 1200px) {
+    opacity: 0;
+  }
 }
 
 .aboutme_project_card_task {
@@ -418,8 +448,8 @@ img {padding:0; margin: 0;}
 .aboutme_project_card_keyword_wrap {
   position: absolute;
   width: calc(100% - 20px);
-  left:20px;
-  bottom:20px;
+  left: 20px;
+  bottom: 20px;
 }
 
 .aboutme_project_card_img {
@@ -436,21 +466,23 @@ img {padding:0; margin: 0;}
   padding-bottom: 50%;
 }
 
-.aboutme_project_card_img_dark,.aboutme_proejct_card_real_img {
+.aboutme_project_card_img_dark,
+.aboutme_proejct_card_real_img {
   transition: 0.3s;
   position: absolute;
-background-position: center center; background-size: cover;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
   height: 100%;
 }
 
 .aboutme_project_card_text {
-  padding : 20px;
+  padding: 20px;
 }
 
 .aboutme_project_card_title {
   font-size: 23px;
-  color:$primary;
+  color: $primary;
   font-weight: 500;
   margin-bottom: 15px;
   padding-bottom: 5px;
@@ -459,17 +491,17 @@ background-position: center center; background-size: cover;
 
 .aboutme_project_card_desc {
   font-size: 14px;
-  color : $grey-7;
+  color: $grey-7;
   font-weight: 300;
 }
 
 .aboutme_project_card_keyword {
   margin-top: 10px;
   font-size: 13px;
-  padding : 2px 10px;
+  padding: 2px 10px;
   border-radius: 3px;
   background-color: $primary;
-  color:white;
+  color: white;
   display: inline-block !important;
   font-weight: 300;
   opacity: 0.8;
@@ -478,10 +510,6 @@ background-position: center center; background-size: cover;
 .aboutme_project_card_text span {
   display: block;
 }
-
-
-
-
 
 /*=======================================================================================
   국내 및 해외 논문 파트
@@ -492,7 +520,9 @@ background-position: center center; background-size: cover;
   border-bottom: 1px solid $grey-8;
 }
 
-.aboutme_thesis_table_tr td:first-child {padding-left: 10px;}
+.aboutme_thesis_table_tr td:first-child {
+  padding-left: 10px;
+}
 
 .aboutme_thesis_table tr td:nth-child(2) {
   width: 110px;
@@ -516,22 +546,21 @@ background-position: center center; background-size: cover;
 .aboutme_thesis_table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing:0px;
+  border-spacing: 0px;
 }
 
 .aboutme_thesis_table td {
-  padding:5px;
+  padding: 5px;
 }
 
 .aboutme_thesis_table_tr {
-
   @media (max-width: $break-small) {
     font-size: 10px;
   }
 }
 
 .aboutme_thesis_table_tr:nth-child(even) {
-  background-color: #fAfAfA;
+  background-color: #fafafa;
 }
 
 /*=======================================================================================
@@ -544,102 +573,155 @@ background-position: center center; background-size: cover;
   word-break: break-all !important;
 }
 
-.aboutme_other_project_div:last-child {border-bottom : 1px solid #e4e4e4;}
+.aboutme_other_project_div:last-child {
+  border-bottom: 1px solid #e4e4e4;
+}
 
-
-.aboutme_other_project_img_td, .aboutme_other_project_text_td  {
+.aboutme_other_project_img_td,
+.aboutme_other_project_text_td {
   display: inline-block;
 }
 
-.aboutme_other_project_img_td {width: 215px !important; padding:0px 20px 10px 5px; position:absolute; top:15;}
-.aboutme_other_project_img { width: 190px;}
-.aboutme_other_project_text_td {position:relative;padding-left: 218px; min-height: 200px;}
-@media (max-width:$break-small) {
-  .aboutme_other_project_img_td {width: 130px !important;}
-  .aboutme_other_project_img {width: 105px !important;}
-  .aboutme_other_project_text_td {padding-left: 133px;}
+.aboutme_other_project_img_td {
+  width: 215px !important;
+  padding: 0px 20px 10px 5px;
+  position: absolute;
+  top: 15;
+}
+.aboutme_other_project_img {
+  width: 190px;
+}
+.aboutme_other_project_text_td {
+  position: relative;
+  padding-left: 218px;
+  min-height: 200px;
+}
+@media (max-width: $break-small) {
+  .aboutme_other_project_img_td {
+    width: 130px !important;
+  }
+  .aboutme_other_project_img {
+    width: 105px !important;
+  }
+  .aboutme_other_project_text_td {
+    padding-left: 133px;
+  }
 }
 
-
-
-.aboutme_other_project_text_td span {display: block;}
+.aboutme_other_project_text_td span {
+  display: block;
+}
 
 .aboutme_other_project_language_platform_div span,
-.aboutme_other_project_public , .aboutme_other_project_private
-{ display: inline-block !important;}
+.aboutme_other_project_public,
+.aboutme_other_project_private {
+  display: inline-block !important;
+}
 
 .aboutme_other_project_ref_div {
   width: 10%;
   display: inline-block;
-  padding-top : 10px;
-  padding-bottom : 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   transition: 0.3s;
   @media (max-width: 670px) {
     width: 30%;
-    padding-top : 0px;
-    padding-bottom : 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
 @media (min-width: 670px) {
   .aboutme_other_project_ref_div:hover {
-    padding-bottom : 10px;
-    padding-top : 0px;
+    padding-bottom: 10px;
+    padding-top: 0px;
   }
 }
 
 .aboutme_other_project_title {
   font-size: 24px;
-  color:$primary-dark;
+  color: $primary-dark;
   font-weight: 600;
 }
 
-.aboutme_other_project_public, .aboutme_other_project_private {
+.aboutme_other_project_public,
+.aboutme_other_project_private {
   text-transform: uppercase;
   padding: 0px 14px;
   border-radius: 5px;
-  color : white;
+  color: white;
   font-size: 15px;
   margin-left: -10px;
   transform: scale(0.7);
   opacity: 0.8;
   display: inline-block !important;
 }
-.aboutme_other_project_public {background-color: rgb(39, 72, 107);}
-.aboutme_other_project_private {background-color: rgb(107, 39, 59);}
-
-.aboutme_other_project_short_desc {color:$primary}
-
-.aboutme_other_project_desc {
-  color: $grey-8; font-size: 13px; margin-top: 10px;
-  @media (max-width: 670px) { font-size:12px; margin-top: 5px;}
+.aboutme_other_project_public {
+  background-color: rgb(39, 72, 107);
+}
+.aboutme_other_project_private {
+  background-color: rgb(107, 39, 59);
 }
 
-.aboutme_other_project_git_a {display: block;}
+.aboutme_other_project_short_desc {
+  color: $primary;
+}
 
-.text_badge2 { border-radius: 6px; overflow: hidden; width: 150px; margin-top: 5px; margin-bottom: -5px;}
-.text_badge_content2 { padding:0px 0px 0px 40px; }
+.aboutme_other_project_desc {
+  color: $grey-8;
+  font-size: 13px;
+  margin-top: 10px;
+  @media (max-width: 670px) {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.aboutme_other_project_git_a {
+  display: block;
+}
+
+.text_badge2 {
+  border-radius: 6px;
+  overflow: hidden;
+  width: 150px;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+.text_badge_content2 {
+  padding: 0px 0px 0px 40px;
+}
 .aboutme_other_project_warning {
   display: inline-block !important;
   background: rgb(234, 216, 247);
   padding: 0 12px;
   font-size: 13px;
   margin-top: 5px;
-  @media (max-width: 670px) { padding: 5px 12px; }
+  @media (max-width: 670px) {
+    padding: 5px 12px;
+  }
 }
 
-.aboutme_other_project_language, .aboutme_other_project_platform {
+.aboutme_other_project_language,
+.aboutme_other_project_platform {
   padding: 0px 14px;
   border-radius: 5px;
-  color : white;
+  color: white;
   font-size: 11px;
   display: inline-block !important;
 }
-.aboutme_other_project_language {background-color: $primary; }
-.aboutme_other_project_platform {background-color: rgb(159, 159, 159); }
+.aboutme_other_project_language {
+  background-color: $primary;
+}
+.aboutme_other_project_platform {
+  background-color: rgb(159, 159, 159);
+}
 .aboutme_other_project_ref_wrap_div {
-  text-align:right;
-  @media (max-width: 670px) { text-align:left; padding-top: 10px;}
+  text-align: right;
+  @media (max-width: 670px) {
+    text-align: left;
+    padding-top: 10px;
+  }
 }
 
 /*=======================================================================================
@@ -650,7 +732,9 @@ background-position: center center; background-size: cover;
   height: 200px;
   margin-bottom: 12px;
   display: inline-block;
-  span {display: block;}
+  span {
+    display: block;
+  }
   margin-left: 1%;
   background-color: rgb(236, 236, 236);
   border-radius: 5px;
@@ -662,7 +746,7 @@ background-position: center center; background-size: cover;
   height: calc(200px - 10px);
 
   img {
-    margin-top:-2px;
+    margin-top: -2px;
     border-radius: 5px;
   }
 }
@@ -676,7 +760,7 @@ background-position: center center; background-size: cover;
 .aboutme_extra_card_name {
   font-weight: 600;
   font-size: 25px;
-  color:$primary;
+  color: $primary;
   margin-bottom: 5px;
 }
 
@@ -691,12 +775,12 @@ background-position: center center; background-size: cover;
 }
 
 .aboutme_extra_card_desc {
-  color:$grey-1;
+  color: $grey-1;
   font-size: 12px;
   line-height: 18px;
 }
 
-@media (max-width:1480px) {
+@media (max-width: 1480px) {
   .aboutme_extra_card {
     margin-left: 0;
     width: 100%;
@@ -708,7 +792,7 @@ background-position: center center; background-size: cover;
   }
 }
 
-@media (max-width:$break-small) {
+@media (max-width: $break-small) {
   .aboutme_extra_card_img_td {
     display: block;
     position: relative;
@@ -726,7 +810,7 @@ background-position: center center; background-size: cover;
   display: inline-block !important;
 }
 
-@media (max-width:$break-small) {
+@media (max-width: $break-small) {
   .aboutme_activity_video {
     width: calc(50% - 3px);
   }
@@ -737,20 +821,22 @@ background-position: center center; background-size: cover;
   opacity: 0.8;
   transition: 0.3s;
   position: absolute;
-  transform: translate(-50%,-50%);
-  left:50%;
-  top:50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 
-.aboutme_activity_video_play_button:hover { opacity: 0.3; }
+.aboutme_activity_video_play_button:hover {
+  opacity: 0.3;
+}
 
 .aboutme_activity_video_name {
   position: absolute;
   font-size: 15px;
   font-weight: 500;
-  color:white;
-  top:10px;
-  left:10px;
+  color: white;
+  top: 10px;
+  left: 10px;
 }
 
 .aboutme_activity_video_black {
@@ -758,11 +844,16 @@ background-position: center center; background-size: cover;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  top:0; left:0;
+  top: 0;
+  left: 0;
   transition: 0.3s;
 }
 
 .aboutme_activity_video:hover {
-  .aboutme_activity_video_play_button { opacity: 0.7; }
-  .aboutme_activity_video_black {background-color: rgba(0, 0, 0, 0.4);}
+  .aboutme_activity_video_play_button {
+    opacity: 0.7;
+  }
+  .aboutme_activity_video_black {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 }

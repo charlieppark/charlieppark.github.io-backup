@@ -1,75 +1,85 @@
 <div class="side_bar_right">
   {% assign sorted = site.pages | where: 'type', 'tech' %}
-  <div class="side_bar_title" id="side_bar_home"><i class="fas fa-code"></i> 영찬의 개발 블로그</div>
+  <div class="side_bar_title" id="side_bar_home">
+    charlieppark의 기술 블로그
+  </div>
   <div class="side_bar_category_div">
-    <div class="side_bar_super_list" id="side_bar_profile">
-      프로필
-    </div>
+    <div class="side_bar_super_list" id="side_bar_profile">프로필</div>
     <div class="side_bar_super_list" id="side_bar_tech">
-      테크노트
-      <div class="side_bar_post_count2">
-        ( {{ sorted.size }} )
-      </div>
+      기술
+      <div class="side_bar_post_count2">( {{ sorted.size }} )</div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_vrmr">
-      <span>Mixed Reality</span>
+    <div class="side_bar_sub_list" id="side_bar_ComputerVision">
+      <span>Computer Vision</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'MixedReality' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'ComputerVision' %} ...
+        {{ post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_Unity">
-      <span>Unity</span>
+    <div class="side_bar_sub_list" id="side_bar_ComputerGraphics">
+      <span>Computer Graphics</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'Unity' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'ComputerGraphics' %}
+        ... {{ post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_Web">
-      <span>Web</span>
+    <div class="side_bar_sub_list" id="side_bar_MachineLearning">
+      <span>Machine Learning</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'Web' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'MachineLearning' %} ...
+        {{ post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_Python">
-      <span>Python</span>
+    <div class="side_bar_sub_list" id="side_bar_Software">
+      <span>Software</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'Python' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Software' %} ... {{
+        post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_ai">
-      <span>Artificial Intelligence</span>
+    <div class="side_bar_sub_list" id="side_bar_Mathematics">
+      <span>Mathematics</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'AI' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Mathematics' %} ... {{
+        post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_toy">
+    <div class="side_bar_sub_list" id="side_bar_ToyProject">
       <span>Toy Project</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'ToyProject' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'ToyProject' %} ... {{
+        post_a1.size }}
       </div>
     </div>
     <div class="side_bar_sub_list" id="side_bar_Algorithm">
       <span>Algorithm</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'Algorithm' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Algorithm' %} ... {{
+        post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_sub_list" id="side_bar_JobPreparation">
-      <span>Job Preparation</span>
+    <div class="side_bar_sub_list" id="side_bar_Thoughts">
+      <span>Thoughts</span>
       <div class="side_bar_post_count">
-        {% assign post_a1 = sorted | where: 'hash-tag', 'JobPreparation' %}
-        ...  {{ post_a1.size }}
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Thoughts' %} ... {{
+        post_a1.size }}
       </div>
     </div>
-    <div class="side_bar_super_list" id="side_bar_life">
-      소소한 이야기
+    <div class="side_bar_sub_list" id="side_bar_Others">
+      <span>Others</span>
+      <div class="side_bar_post_count">
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Others' %} ... {{
+        post_a1.size }}
+      </div>
     </div>
+    <div class="side_bar_sub_list" id="side_bar_Logs">
+      <span>Logs</span>
+      <div class="side_bar_post_count">
+        {% assign post_a1 = sorted | where: 'hash-tag', 'Logs' %} ... {{
+        post_a1.size }}
+      </div>
+    </div>
+    <div class="side_bar_super_list" id="side_bar_life">소소한 이야기</div>
     <!--<div class="side_bar_super_list" id="side_bar_project">
       프로젝트
     </div>-->
@@ -77,70 +87,80 @@
 </div>
 
 <script>
-  side_bar_home = document.getElementById('side_bar_home')
-  side_bar_home.addEventListener('click', () => {
-    location.href = "/"
-  })
+  side_bar_home = document.getElementById("side_bar_home");
+  side_bar_home.addEventListener("click", () => {
+    location.href = "/";
+  });
 
-  side_bar_profile = document.getElementById('side_bar_profile')
-  side_bar_profile.addEventListener('click', () => {
-    location.href = "/profile"
-  })
+  side_bar_profile = document.getElementById("side_bar_profile");
+  side_bar_profile.addEventListener("click", () => {
+    location.href = "/profile";
+  });
 
-  side_bar_tech = document.getElementById('side_bar_tech')
-  side_bar_tech.addEventListener('click', () => {
-    location.href = "/tech"
-  })
+  side_bar_tech = document.getElementById("side_bar_tech");
+  side_bar_tech.addEventListener("click", () => {
+    location.href = "/tech";
+  });
 
-  side_bar_life = document.getElementById('side_bar_life')
-  side_bar_life.addEventListener('click', () => {
-    location.href = "/life"
-  })
+  side_bar_life = document.getElementById("side_bar_life");
+  side_bar_life.addEventListener("click", () => {
+    location.href = "/life";
+  });
 
   /*
-  side_bar_project = document.getElementById('side_bar_project')
-  side_bar_project.addEventListener('click', () => {
-    location.href = "/project"
-  })
-  */
+    side_bar_project = document.getElementById('side_bar_project')
+    side_bar_project.addEventListener('click', () => {
+      location.href = "/project"
+    })
+    */
 
-  side_bar_vrmr = document.getElementById('side_bar_vrmr')
-  side_bar_vrmr.addEventListener('click', () => {
-    location.href = "/tech/?tag=MixedReality"
-  })
+  side_bar_vrmr = document.getElementById("side_bar_ComputerVision");
+  side_bar_vrmr.addEventListener("click", () => {
+    location.href = "/tech/?tag=ComputerVision";
+  });
 
-  side_bar_Unity = document.getElementById('side_bar_Unity')
-  side_bar_Unity.addEventListener('click', () => {
-    location.href = "/tech/?tag=Unity"
-  })
+  side_bar_Unity = document.getElementById("side_bar_ComputerGraphics");
+  side_bar_Unity.addEventListener("click", () => {
+    location.href = "/tech/?tag=ComputerGraphics";
+  });
 
-  side_bar_JobPreparation = document.getElementById('side_bar_JobPreparation')
-  side_bar_JobPreparation.addEventListener('click', () => {
-    location.href = "/tech/?tag=JobPreparation"
-  })
+  side_bar_JobPreparation = document.getElementById("side_bar_MachineLearning");
+  side_bar_JobPreparation.addEventListener("click", () => {
+    location.href = "/tech/?tag=JMachineLearning";
+  });
 
-  side_bar_Web = document.getElementById('side_bar_Web')
-  side_bar_Web.addEventListener('click', () => {
-    location.href = "/tech/?tag=Web"
-  })
+  side_bar_Web = document.getElementById("side_bar_Software");
+  side_bar_Web.addEventListener("click", () => {
+    location.href = "/tech/?tag=Software";
+  });
 
-  side_bar_Python = document.getElementById('side_bar_Python')
-  side_bar_Python.addEventListener('click', () => {
-    location.href = "/tech/?tag=Python"
-  })
+  side_bar_Python = document.getElementById("side_bar_Mathematics");
+  side_bar_Python.addEventListener("click", () => {
+    location.href = "/tech/?tag=Mathematics";
+  });
 
-  side_bar_ai = document.getElementById('side_bar_ai')
-  side_bar_ai.addEventListener('click', () => {
-    location.href = "/tech/?tag=AI"
-  })
+  side_bar_ai = document.getElementById("side_bar_ToyProject");
+  side_bar_ai.addEventListener("click", () => {
+    location.href = "/tech/?tag=ToyProject";
+  });
 
-  side_bar_toy = document.getElementById('side_bar_toy')
-  side_bar_toy.addEventListener('click', () => {
-    location.href = "/tech/?tag=ToyProject"
-  })
+  side_bar_toy = document.getElementById("side_bar_Algorithm");
+  side_bar_toy.addEventListener("click", () => {
+    location.href = "/tech/?tag=Algorithm";
+  });
 
-  side_bar_Algorithm = document.getElementById('side_bar_Algorithm')
-  side_bar_Algorithm.addEventListener('click', () => {
-    location.href = "/tech/?tag=Algorithm"
-  })
+  side_bar_Algorithm = document.getElementById("side_bar_Thoughts");
+  side_bar_Algorithm.addEventListener("click", () => {
+    location.href = "/tech/?tag=Thoughts";
+  });
+
+  side_bar_Algorithm = document.getElementById("side_bar_Others");
+  side_bar_Algorithm.addEventListener("click", () => {
+    location.href = "/tech/?tag=Others";
+  });
+
+  side_bar_Algorithm = document.getElementById("side_bar_Logs");
+  side_bar_Algorithm.addEventListener("click", () => {
+    location.href = "/tech/?tag=Logs";
+  });
 </script>

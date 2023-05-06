@@ -19,7 +19,7 @@
     &:before {
       position: absolute;
       background-color: $pick-color;
-      content: 'KimYC Master Branch';
+      content: "charlieppark Master Branch";
       margin: -11px 0 0 200px;
       width: max-content;
       padding: 2px 5px;
@@ -40,7 +40,7 @@
       width: 4px;
       opacity: 0.35;
       background-color: $repo-color;
-      content: '';
+      content: "";
       z-index: -1;
       margin-left: 6px;
       height: 100%;
@@ -65,7 +65,7 @@
         height: 100%;
         width: $commit-border;
         background-color: $branch-color;
-        content: '';
+        content: "";
         z-index: -1;
         margin-left: 6px;
       }
@@ -125,7 +125,8 @@
         background-color: $grey-3;
         display: table;
 
-        .profile, .emoji {
+        .profile,
+        .emoji {
           position: absolute;
         }
 
@@ -168,7 +169,6 @@
           }
 
           .message {
-
             @media (max-width: $break-small) {
               font-size: 13px;
             }
@@ -177,9 +177,9 @@
           .message_title {
             display: inline-block;
             background-color: $secondary;
-            color:#3c3a58;
+            color: #ffffff;
             font-weight: bold;
-            padding:5px 30px;
+            padding: 5px 30px;
             border-radius: 4px;
             width: auto;
             margin-bottom: 10px;
@@ -192,7 +192,8 @@
           .media {
             margin-top: 10px;
 
-            .image-wrap, .video-wrap {
+            .image-wrap,
+            .video-wrap {
               overflow: hidden;
               border-radius: 10px;
               display: inline-table;
@@ -259,7 +260,7 @@
   }
 }
 
-.stop-scroll{
+.stop-scroll {
   overflow: hidden;
 
   @media (max-width: $break-small) {
@@ -267,8 +268,7 @@
   }
 }
 
-
-.modal{
+.modal {
   position: fixed;
   z-index: 9999;
   left: 0;
@@ -283,7 +283,7 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
 
-  &-container{
+  &-container {
     display: flex;
     width: 50%;
     height: auto;
@@ -292,10 +292,10 @@
     margin: 0 auto;
     opacity: 0;
     transition: all 0.3s ease-in-out;
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @media (max-width: $break-large) {
       width: 40%;
@@ -309,20 +309,21 @@
       width: 80%;
     }
 
-    .close{
-      position:absolute;
-      width:30px;
-      height:30px;
-      text-align:center;
+    .close {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      text-align: center;
       line-height: 30px;
       color: #ffffff;
-      font-size:40px;
-      right:1rem;
-      top:1rem;
+      font-size: 40px;
+      right: 1rem;
+      top: 1rem;
       cursor: pointer;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
       display: none;
       cursor: pointer;
       position: absolute;
@@ -343,15 +344,15 @@
       border-radius: 3px 0 0 3px;
     }
 
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     &-content {
       display: block;
       width: 100%;
       height: auto;
-
     }
   }
 
@@ -359,7 +360,7 @@
     visibility: visible;
     opacity: 1;
 
-    .modal-container{
+    .modal-container {
       opacity: 1;
     }
   }

@@ -5,30 +5,40 @@
 <script src="./src/billboard.js"></script>
 
 <!-- Load with base style -->
-<link rel="stylesheet" href="./src/billboard.css">
+<link rel="stylesheet" href="./src/billboard.css" />
 
 <!-- Or load different theme style -->
-<link rel="stylesheet" href="./src/insight.min.css">
+<link rel="stylesheet" href="./src/insight.min.css" />
 
-<div class="aboutme_stack_graph" id="aboutme_stack_graph">
-
-</div>
+<div class="aboutme_stack_graph" id="aboutme_stack_graph"></div>
 
 <script language="javascript">
   var chart = bb.generate({
     data: {
       x: "Ability",
       columns: [
-      	["Ability", "C#", "유니티", "3D 모델링", "알고리즘", "Git", "웹", "자바스크립트", "Node.js", "파이썬"],
-      	["숙련도", 85, 90, 75, 60, 70, 80, 60, 50, 55],],
+        [
+          "Ability",
+          "English",
+          "Mathematics",
+          "C / C++, ",
+          "Pytorch",
+          "Python / Numpy",
+          "Google JAX",
+          "Flutter",
+          "Java / Spring Boot",
+          "Git / Github",
+        ],
+        ["숙련도", 85, 75, 95, 80, 85, 40, 50, 60, 85],
+      ],
       type: "radar", // for ESM specify as: radar()
-      labels: false
+      labels: false,
     },
     legend: {
-      show: false
+      show: false,
     },
-    color:{
-      pattern: [ "#9166fc" ]
+    color: {
+      pattern: ["#bb2649"],
     },
     radar: {
       level: {
@@ -38,17 +48,15 @@
       axis: {
         max: 100,
         text: {
-          show: true
-        }
+          show: true,
+        },
       },
       level: {
         text: {
-          show: false
-        }
-      }
+          show: false,
+        },
+      },
     },
-    bindto: "#aboutme_stack_graph"
+    bindto: "#aboutme_stack_graph",
   });
-
-  
 </script>
