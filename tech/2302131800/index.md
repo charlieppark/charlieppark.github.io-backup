@@ -7,7 +7,7 @@ title: Tip) LVM 최대 용량 만들기
 subtitle: LVM 용량이 작을 때 뻘짓하지 않고 바로 최대 용량으로 만드는 방법
 writer: charlieppark
 post-header: true
-image: /img/title.png
+image: /tech/2302131800/img/title.png
 header-img: /tech/2302131800/img/bg.png
 hash-tag: [Others, Ubuntu, LVM, Server]
 draft: false
