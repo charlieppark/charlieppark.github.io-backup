@@ -9,7 +9,7 @@ writer: charlieppark
 post-header: true
 image: /img/title.png
 header-img: /tech/2302131800/img/bg.png
-hash-tag: [Software, Ubuntu, LVM, Server]
+hash-tag: [Others, Ubuntu, LVM, Server]
 draft: false
 ---
 
