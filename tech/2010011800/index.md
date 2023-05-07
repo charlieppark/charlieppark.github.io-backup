@@ -1,7 +1,7 @@
 ---
 layout: post
 type: tech
-date: 2020-10-04 18:00
+date: 2020-10-01 18:00
 category: Algorithm
 title: 백준 1011번
 subtitle: Fly me to the Alpha Centauri
@@ -9,7 +9,7 @@ writer: charlieppark
 post-header: true
 image: /img/title.png
 header-img: /tech/2010011800/img/bg.png
-hash-tag: [Algorithm, BOJ, PS, Math(Algorithm)]
+hash-tag: [Algorithm, BOJ, PS, Math-Algorithm]
 draft: false
 ---
 
