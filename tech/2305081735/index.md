@@ -4,7 +4,7 @@ type: tech
 date: 2023-05-08 17:35
 category: Logs
 title: "<괴델, 에셔, 바흐> 제1부 : GEB - 서론 (3)"
-subtitle: page ~ 31
+subtitle: page ~ 38
 writer: charlieppark
 post-header: true
 image: /img/title.png
