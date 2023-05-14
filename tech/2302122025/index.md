@@ -3,8 +3,8 @@ layout: post
 type: tech
 date: 2023-02-12 20:25
 category: ComputerGraphics
-title: 홍정모 그래픽스 새싹코스 파트 1 - 챕터 1
-subtitle:
+title: "[Hong] 1 OT, 세팅, 기본 예제"
+subtitle: 홍정모 그래픽스 새싹코스 파트 1 - 챕터 1
 writer: charlieppark
 post-header: true
 image: /img/title.png
